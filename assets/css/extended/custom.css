@@ -158,6 +158,74 @@ body {
 }
 
 /* ===================================
+   포트폴리오 섹션
+   =================================== */
+.portfolio-section,
+.recent-posts {
+    margin: 3rem 0 !important;
+}
+
+.section-title {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: var(--text-900) !important;
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 2px solid var(--border) !important;
+}
+
+.portfolio-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 1.25rem !important;
+}
+
+.portfolio-card {
+    background: var(--bg-white) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 16px !important;
+    padding: 1.75rem !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+}
+
+.portfolio-card:hover {
+    border-color: var(--primary-light) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 40px rgba(79, 70, 229, 0.12) !important;
+}
+
+.portfolio-card .card-icon {
+    font-size: 2.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.portfolio-card h3 {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: var(--text-900) !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.portfolio-card p {
+    font-size: 0.9rem !important;
+    color: var(--text-500) !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.5 !important;
+}
+
+.portfolio-card .card-tag {
+    display: inline-block !important;
+    padding: 0.25rem 0.75rem !important;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    color: var(--primary) !important;
+    background: rgba(79, 70, 229, 0.08) !important;
+    border-radius: 20px !important;
+}
+
+/* ===================================
    다크 모드 (네이비 테마)
    =================================== */
 :root[data-theme="dark"] {
@@ -275,4 +343,33 @@ body {
 
 [data-theme="dark"] #top-link {
     background: #818cf8 !important;
+}
+
+/* 다크모드 포트폴리오 */
+[data-theme="dark"] .section-title {
+    color: #f1f5f9 !important;
+    border-bottom-color: #3d4f7a !important;
+}
+
+[data-theme="dark"] .portfolio-card {
+    background: #243154 !important;
+    border-color: #3d4f7a !important;
+}
+
+[data-theme="dark"] .portfolio-card:hover {
+    border-color: #818cf8 !important;
+    box-shadow: 0 12px 40px rgba(129, 140, 248, 0.15) !important;
+}
+
+[data-theme="dark"] .portfolio-card h3 {
+    color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .portfolio-card p {
+    color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .portfolio-card .card-tag {
+    background: #2d3a5c !important;
+    color: #818cf8 !important;
 }

@@ -1,0 +1,77 @@
+{{ define "main" }}
+{{- if .Site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Site.Params.homeInfoParams.Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Site.Params.homeInfoParams.Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{- partial "social_icons.html" .Site.Params -}}
+    </footer>
+</article>
+{{- end }}
+
+<!-- 포트폴리오/프로젝트 섹션 -->
+<section class="portfolio-section">
+    <h2 class="section-title">📚 학습 & 프로젝트</h2>
+    <div class="portfolio-grid">
+        <a href="/adsp/" class="portfolio-card">
+            <div class="card-icon">📊</div>
+            <h3>ADSP</h3>
+            <p>데이터 분석 준전문가 자격증 학습 기록</p>
+            <span class="card-tag">자격증</span>
+        </a>
+        <a href="/posts/" class="portfolio-card">
+            <div class="card-icon">📝</div>
+            <h3>Blog Posts</h3>
+            <p>개발 경험과 기술 학습 기록</p>
+            <span class="card-tag">블로그</span>
+        </a>
+        <a href="https://github.com/zmfpdl64" target="_blank" class="portfolio-card">
+            <div class="card-icon">💻</div>
+            <h3>GitHub</h3>
+            <p>오픈소스 프로젝트 및 코드 저장소</p>
+            <span class="card-tag">프로젝트</span>
+        </a>
+    </div>
+</section>
+
+<!-- 최근 글 -->
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $filtered := where $pages "Params.hidden" "!=" true }}
+{{- $paginator := .Paginate $filtered }}
+{{- if gt (len $paginator.Pages) 0 }}
+<section class="recent-posts">
+    <h2 class="section-title">✨ 최근 글</h2>
+    {{- range $paginator.Pages }}
+    {{- $class := "post-entry" }}
+    <article class="{{ $class }}">
+        {{- $isHidden := .Params.cover.hiddenInList | default .Params.cover.hidden | default false }}
+        {{- if and .Params.cover.image (not $isHidden) }}
+        <div class="entry-cover">
+            {{- partial "cover.html" . }}
+        </div>
+        {{- end }}
+        <header class="entry-header">
+            <h2 class="entry-hint-parent">
+                {{- .Title }}
+                {{- if .Draft }}<sup><span class="entry-hint" title="Draft">draft</span></sup>{{- end }}
+            </h2>
+        </header>
+        {{- if (ne .Params.hideSummary true) }}
+        <div class="entry-content">
+            <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+        </div>
+        {{- end }}
+        <footer class="entry-footer">
+            {{- partial "post_meta.html" . -}}
+        </footer>
+        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+    </article>
+    {{- end }}
+</section>
+{{- end }}
+
+{{ end }}
