@@ -378,8 +378,27 @@ body {
    다크 모드 - 전역 텍스트 색상
    =================================== */
 
+/* 다크모드 기본 텍스트 (본문) - 90% 불투명 */
 [data-theme="dark"] * {
-    color: #f1f5f9 !important;
+    color: rgba(241, 245, 249, 0.9) !important;
+}
+
+/* 다크모드 타이틀 - 100% 불투명 */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] .post-title,
+[data-theme="dark"] .entry-header h2 {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* 다크모드 메타 정보 (날짜, 작성자) - 70% 불투명 */
+[data-theme="dark"] .post-meta,
+[data-theme="dark"] .post-description,
+[data-theme="dark"] .entry-footer {
+    color: rgba(241, 245, 249, 0.7) !important;
 }
 
 [data-theme="dark"] a {
@@ -390,13 +409,196 @@ body {
     color: #a5b4fc !important;
 }
 
-/* 코드 블록 */
-[data-theme="dark"] code {
-    background: #2d3a5c !important;
+/* ===================================
+   코드 블록 - Atom One Dark 테마
+   =================================== */
+
+/* 인라인 코드 */
+code {
+    background: #e8eaed !important;
+    color: #e06c75 !important;
+    padding: 0.2em 0.4em !important;
+    border-radius: 4px !important;
+    font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace !important;
+    font-size: 0.9em !important;
 }
 
+/* 코드 블록 */
+pre {
+    background: #282c34 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    overflow-x: auto !important;
+}
+
+pre code {
+    background: transparent !important;
+    color: #abb2bf !important;
+    padding: 0 !important;
+    font-size: 0.85em !important;
+    line-height: 1.6 !important;
+}
+
+/* 다크모드 인라인 코드 */
+[data-theme="dark"] code {
+    background: #3e4451 !important;
+    color: #e06c75 !important;
+}
+
+/* 다크모드 코드 블록 */
 [data-theme="dark"] pre {
-    background: #1e2a4a !important;
+    background: #282c34 !important;
+    border: 1px solid #3e4451 !important;
+}
+
+[data-theme="dark"] pre code {
+    background: transparent !important;
+}
+
+/* ===================================
+   Atom One Dark - Syntax Highlighting
+   =================================== */
+
+/* 배경 */
+.highlight pre,
+.highlight code,
+.highlight {
+    background: #282c34 !important;
+}
+
+/* 기본 텍스트 */
+.highlight .chroma {
+    background: #282c34 !important;
+    color: #abb2bf !important;
+}
+
+/* 주석 - 밝은 회색 이탤릭 */
+.highlight .c,
+.highlight .ch,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+    color: #8b949e !important;
+    font-style: italic !important;
+}
+
+/* 키워드 (function, const, let, var, return, if, for, def) - 보라색 */
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kv {
+    color: #c678dd !important;
+}
+
+/* 내장 타입 키워드 */
+.highlight .kt {
+    color: #e5c07b !important;
+}
+
+/* 함수명 - 파란색 */
+.highlight .nf,
+.highlight .fm {
+    color: #61afef !important;
+}
+
+/* 클래스명 - 노란색 */
+.highlight .nc,
+.highlight .nn {
+    color: #e5c07b !important;
+}
+
+/* 문자열 - 초록색 */
+.highlight .s,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+    color: #98c379 !important;
+}
+
+/* 숫자 - 주황색 */
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo {
+    color: #d19a66 !important;
+}
+
+/* 연산자 - 청록색 */
+.highlight .o,
+.highlight .ow {
+    color: #56b6c2 !important;
+}
+
+/* 구두점 - 기본색 */
+.highlight .p {
+    color: #abb2bf !important;
+}
+
+/* 변수명 - 빨간색 */
+.highlight .n,
+.highlight .na,
+.highlight .nb,
+.highlight .ni,
+.highlight .nl,
+.highlight .no,
+.highlight .nv,
+.highlight .bp,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
+    color: #e06c75 !important;
+}
+
+/* 속성/메서드 - 빨간색 */
+.highlight .nx {
+    color: #e06c75 !important;
+}
+
+/* 내장 함수 (console, print 등) - 청록색 */
+.highlight .nb {
+    color: #56b6c2 !important;
+}
+
+/* 에러/경고 */
+.highlight .err {
+    color: #e06c75 !important;
+    background: transparent !important;
+}
+
+/* 특수: 템플릿 리터럴 */
+.highlight .si {
+    color: #e06c75 !important;
+}
+
+/* 라인 넘버 */
+.highlight .ln,
+.highlight .lnt {
+    color: #4b5363 !important;
+}
+
+/* 다크모드에서도 동일 적용 */
+[data-theme="dark"] .highlight pre,
+[data-theme="dark"] .highlight code,
+[data-theme="dark"] .highlight,
+[data-theme="dark"] .highlight .chroma {
+    background: #282c34 !important;
 }
 
 /* 검색 */
@@ -433,4 +635,25 @@ body {
 
 [data-theme="dark"] blockquote {
     border-left-color: #818cf8 !important;
+}
+
+/* 제목 앵커 링크 (#) 항상 표시 */
+.post-content .anchor {
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 0.5 !important;
+}
+
+.post-content h1:hover .anchor,
+.post-content h2:hover .anchor,
+.post-content h3:hover .anchor,
+.post-content h4:hover .anchor {
+    opacity: 1 !important;
+}
+
+[data-theme="dark"] .post-content .anchor {
+    color: #ffffff !important;
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
