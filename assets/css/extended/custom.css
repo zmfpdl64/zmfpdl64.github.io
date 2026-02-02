@@ -3,275 +3,276 @@
    =================================== */
 
 :root {
-  --primary: #4f46e5;
-  --primary-light: #6366f1;
-  --primary-dark: #4338ca;
-  --accent: #06b6d4;
-  --bg-white: #ffffff;
-  --bg-gray-50: #f8fafc;
-  --bg-gray-100: #f1f5f9;
-  --text-900: #0f172a;
-  --text-700: #334155;
-  --text-500: #64748b;
-  --text-400: #94a3b8;
-  --border: #e2e8f0;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --primary: #4f46e5;
+    --primary-light: #6366f1;
+    --primary-dark: #4338ca;
+    --accent: #06b6d4;
+    --bg-white: #ffffff;
+    --bg-gray-50: #f8fafc;
+    --bg-gray-100: #f1f5f9;
+    --text-900: #0f172a;
+    --text-700: #334155;
+    --text-500: #64748b;
+    --text-400: #94a3b8;
+    --border: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 body {
-  background: linear-gradient(180deg, var(--bg-gray-50) 0%, var(--bg-white) 100%) !important;
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  color: var(--text-700) !important;
+    background: linear-gradient(180deg, var(--bg-gray-50) 0%, var(--bg-white) 100%) !important;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    color: var(--text-700) !important;
 }
 
 .main {
-  max-width: 900px !important;
-  margin: 0 auto !important;
-  padding: 2rem 1.5rem !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 2rem 1.5rem !important;
 }
 
 .header {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(20px) !important;
-  border-bottom: 1px solid var(--border) !important;
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 100 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid var(--border) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
 }
 
 .logo a {
-  font-size: 1.35rem !important;
-  font-weight: 700 !important;
-  color: var(--text-900) !important;
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+    color: var(--text-900) !important;
 }
 
 #menu a {
-  padding: 0.5rem 1rem !important;
-  color: var(--text-500) !important;
-  font-weight: 500 !important;
-  border-radius: 8px !important;
-  transition: all 0.2s ease !important;
+    padding: 0.5rem 1rem !important;
+    color: var(--text-500) !important;
+    font-weight: 500 !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
 }
 
-#menu a:hover, #menu a.active {
-  color: var(--primary) !important;
-  background: rgba(79, 70, 229, 0.08) !important;
+#menu a:hover,
+#menu a.active {
+    color: var(--primary) !important;
+    background: rgba(79, 70, 229, 0.08) !important;
 }
 
 .first-entry {
-  background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-gray-100) 100%) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: 20px !important;
-  padding: 3rem !important;
-  margin-bottom: 3rem !important;
-  box-shadow: var(--shadow-lg) !important;
-  text-align: center !important;
+    background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-gray-100) 100%) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 20px !important;
+    padding: 3rem !important;
+    margin-bottom: 3rem !important;
+    box-shadow: var(--shadow-lg) !important;
+    text-align: center !important;
 }
 
 .first-entry .entry-header h1 {
-  font-size: 2.5rem !important;
-  font-weight: 800 !important;
-  color: var(--text-900) !important;
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    color: var(--text-900) !important;
 }
 
 .post-entry {
-  background: var(--bg-white) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: 16px !important;
-  padding: 1.75rem !important;
-  margin-bottom: 1.25rem !important;
-  transition: all 0.3s ease !important;
+    background: var(--bg-white) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 16px !important;
+    padding: 1.75rem !important;
+    margin-bottom: 1.25rem !important;
+    transition: all 0.3s ease !important;
 }
 
 .post-entry:hover {
-  border-color: var(--primary-light) !important;
-  transform: translateY(-4px) !important;
-  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.12) !important;
+    border-color: var(--primary-light) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 40px rgba(79, 70, 229, 0.12) !important;
 }
 
 .post-entry .entry-header h2 {
-  font-size: 1.35rem !important;
-  font-weight: 700 !important;
-  color: var(--text-900) !important;
+    font-size: 1.35rem !important;
+    font-weight: 700 !important;
+    color: var(--text-900) !important;
 }
 
 .post-tags a {
-  padding: 0.35rem 0.85rem !important;
-  font-size: 0.8rem !important;
-  color: var(--primary) !important;
-  background: rgba(79, 70, 229, 0.08) !important;
-  border-radius: 20px !important;
+    padding: 0.35rem 0.85rem !important;
+    font-size: 0.8rem !important;
+    color: var(--primary) !important;
+    background: rgba(79, 70, 229, 0.08) !important;
+    border-radius: 20px !important;
 }
 
 .post-tags a:hover {
-  background: var(--primary) !important;
-  color: white !important;
+    background: var(--primary) !important;
+    color: white !important;
 }
 
 .social-icons a {
-  width: 48px !important;
-  height: 48px !important;
-  background: var(--bg-white) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: 12px !important;
-  color: var(--text-500) !important;
-  transition: all 0.3s ease !important;
+    width: 48px !important;
+    height: 48px !important;
+    background: var(--bg-white) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    color: var(--text-500) !important;
+    transition: all 0.3s ease !important;
 }
 
 .social-icons a:hover {
-  background: var(--primary) !important;
-  border-color: var(--primary) !important;
-  color: white !important;
-  transform: translateY(-3px) !important;
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+    transform: translateY(-3px) !important;
 }
 
 .post-single {
-  background: var(--bg-white) !important;
-  border-radius: 20px !important;
-  padding: 3rem !important;
-  box-shadow: var(--shadow-lg) !important;
-  border: 1px solid var(--border) !important;
+    background: var(--bg-white) !important;
+    border-radius: 20px !important;
+    padding: 3rem !important;
+    box-shadow: var(--shadow-lg) !important;
+    border: 1px solid var(--border) !important;
 }
 
 .post-title {
-  font-size: 2.25rem !important;
-  font-weight: 800 !important;
-  color: var(--text-900) !important;
+    font-size: 2.25rem !important;
+    font-weight: 800 !important;
+    color: var(--text-900) !important;
 }
 
 .post-content a {
-  color: var(--primary) !important;
+    color: var(--primary) !important;
 }
 
 .footer {
-  background: var(--bg-white) !important;
-  border-top: 1px solid var(--border) !important;
-  color: var(--text-400) !important;
+    background: var(--bg-white) !important;
+    border-top: 1px solid var(--border) !important;
+    color: var(--text-400) !important;
 }
 
 #top-link {
-  background: var(--primary) !important;
-  color: white !important;
-  border-radius: 12px !important;
+    background: var(--primary) !important;
+    color: white !important;
+    border-radius: 12px !important;
 }
 
 /* ===================================
    다크 모드 (네이비 테마)
    =================================== */
 :root[data-theme="dark"] {
-  --theme: #1e2a4a !important;
-  --entry: #243154 !important;
-  --primary: #e2e8f0 !important;
-  --secondary: #94a3b8 !important;
-  --tertiary: #3d4f7a !important;
-  --content: #cbd5e1 !important;
-  --code-block-bg: #2d3a5c !important;
-  --code-bg: #2d3a5c !important;
-  --border: #3d4f7a !important;
+    --theme: #1e2a4a !important;
+    --entry: #243154 !important;
+    --primary: #e2e8f0 !important;
+    --secondary: #94a3b8 !important;
+    --tertiary: #3d4f7a !important;
+    --content: #cbd5e1 !important;
+    --code-block-bg: #2d3a5c !important;
+    --code-bg: #2d3a5c !important;
+    --border: #3d4f7a !important;
 }
 
 [data-theme="dark"] body {
-  background: #1e2a4a !important;
+    background: #1e2a4a !important;
 }
 
 [data-theme="dark"] .main {
-  background: #1e2a4a !important;
+    background: #1e2a4a !important;
 }
 
 [data-theme="dark"] .header {
-  background: #172038 !important;
-  border-bottom: 1px solid #3d4f7a !important;
+    background: #172038 !important;
+    border-bottom: 1px solid #3d4f7a !important;
 }
 
 [data-theme="dark"] .logo a {
-  color: #f1f5f9 !important;
+    color: #f1f5f9 !important;
 }
 
 [data-theme="dark"] #menu a {
-  color: #94a3b8 !important;
+    color: #94a3b8 !important;
 }
 
 [data-theme="dark"] #menu a:hover,
 [data-theme="dark"] #menu a.active {
-  color: #818cf8 !important;
-  background: rgba(129, 140, 248, 0.15) !important;
+    color: #818cf8 !important;
+    background: rgba(129, 140, 248, 0.15) !important;
 }
 
 [data-theme="dark"] .first-entry {
-  background: linear-gradient(135deg, #172038 0%, #243154 100%) !important;
-  border-color: #3d4f7a !important;
+    background: linear-gradient(135deg, #172038 0%, #243154 100%) !important;
+    border-color: #3d4f7a !important;
 }
 
 [data-theme="dark"] .first-entry .entry-header h1 {
-  color: #f1f5f9 !important;
+    color: #f1f5f9 !important;
 }
 
 [data-theme="dark"] .first-entry .entry-content {
-  color: #cbd5e1 !important;
+    color: #cbd5e1 !important;
 }
 
 [data-theme="dark"] .post-entry {
-  background: #243154 !important;
-  border-color: #3d4f7a !important;
+    background: #243154 !important;
+    border-color: #3d4f7a !important;
 }
 
 [data-theme="dark"] .post-entry:hover {
-  border-color: #818cf8 !important;
+    border-color: #818cf8 !important;
 }
 
 [data-theme="dark"] .post-entry .entry-header h2 {
-  color: #f1f5f9 !important;
+    color: #f1f5f9 !important;
 }
 
 [data-theme="dark"] .post-entry .entry-content {
-  color: #94a3b8 !important;
+    color: #94a3b8 !important;
 }
 
 [data-theme="dark"] .post-tags a {
-  background: #2d3a5c !important;
-  color: #818cf8 !important;
+    background: #2d3a5c !important;
+    color: #818cf8 !important;
 }
 
 [data-theme="dark"] .post-tags a:hover {
-  background: #818cf8 !important;
-  color: white !important;
+    background: #818cf8 !important;
+    color: white !important;
 }
 
 [data-theme="dark"] .social-icons a {
-  background: #2d3a5c !important;
-  border-color: #3d4f7a !important;
-  color: #94a3b8 !important;
+    background: #2d3a5c !important;
+    border-color: #3d4f7a !important;
+    color: #94a3b8 !important;
 }
 
 [data-theme="dark"] .social-icons a:hover {
-  background: #818cf8 !important;
-  color: white !important;
+    background: #818cf8 !important;
+    color: white !important;
 }
 
 [data-theme="dark"] .post-single {
-  background: #243154 !important;
-  border-color: #3d4f7a !important;
+    background: #243154 !important;
+    border-color: #3d4f7a !important;
 }
 
 [data-theme="dark"] .post-title {
-  color: #f1f5f9 !important;
+    color: #f1f5f9 !important;
 }
 
 [data-theme="dark"] .post-content {
-  color: #cbd5e1 !important;
+    color: #cbd5e1 !important;
 }
 
 [data-theme="dark"] .post-content a {
-  color: #818cf8 !important;
+    color: #818cf8 !important;
 }
 
 [data-theme="dark"] .footer {
-  background: #172038 !important;
-  border-top-color: #3d4f7a !important;
-  color: #64748b !important;
+    background: #172038 !important;
+    border-top-color: #3d4f7a !important;
+    color: #64748b !important;
 }
 
 [data-theme="dark"] #top-link {
-  background: #818cf8 !important;
+    background: #818cf8 !important;
 }

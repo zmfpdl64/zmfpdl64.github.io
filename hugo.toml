@@ -2,7 +2,6 @@ baseURL = 'https://zmfpdl64.github.io/'
 languageCode = 'ko-kr'
 title = 'Lee WooJin | Developer'
 theme = 'PaperMod'
-publishDir = 'docs'
 
 enableRobotsTXT = true
 buildDrafts = false
