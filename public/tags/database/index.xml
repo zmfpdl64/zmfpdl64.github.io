@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Database on Lee WooJin | Developer</title>
+    <link>https://zmfpdl64.github.io/tags/database/</link>
+    <description>Recent content in Database on Lee WooJin | Developer</description>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 03 Jun 2024 01:16:00 +0900</lastBuildDate>
+    <atom:link href="https://zmfpdl64.github.io/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BeanPay Detail 삭제 이유</title>
+      <link>https://zmfpdl64.github.io/posts/beanpay-detail-removal/</link>
+      <pubDate>Mon, 03 Jun 2024 01:16:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/beanpay-detail-removal/</guid>
+      <description>BeanPayDetail 테이블 제거 및 PaymentDetail로 통합한 이유</description>
+    </item>
+  </channel>
+</rss>

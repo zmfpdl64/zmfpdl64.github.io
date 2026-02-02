@@ -15,5 +15,68 @@
       <guid>https://zmfpdl64.github.io/posts/first-post/</guid>
       <description>Hugo &#43; PaperMod 테마로 블로그를 시작했습니다!</description>
     </item>
+    <item>
+      <title>[SpringBoot] ThreadLocal을 활용한 인증관리</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-threadlocal-authentication/</link>
+      <pubDate>Thu, 20 Jun 2024 19:26:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-threadlocal-authentication/</guid>
+      <description>Spring Boot에서 ThreadLocal을 사용한 인증 관리와 주의사항</description>
+    </item>
+    <item>
+      <title>[SpringBoot] In-Memory 환경 Memory Leak</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-memory-leak-inmemory/</link>
+      <pubDate>Thu, 20 Jun 2024 19:20:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-memory-leak-inmemory/</guid>
+      <description>In-Memory 인증번호 관리 시 발생하는 메모리 누수 문제와 해결 방법</description>
+    </item>
+    <item>
+      <title>BeanPay Detail 삭제 이유</title>
+      <link>https://zmfpdl64.github.io/posts/beanpay-detail-removal/</link>
+      <pubDate>Mon, 03 Jun 2024 01:16:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/beanpay-detail-removal/</guid>
+      <description>BeanPayDetail 테이블 제거 및 PaymentDetail로 통합한 이유</description>
+    </item>
+    <item>
+      <title>락 선택 이유와 성능 테스트</title>
+      <link>https://zmfpdl64.github.io/posts/lock-selection-performance-test/</link>
+      <pubDate>Tue, 30 Apr 2024 18:23:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/lock-selection-performance-test/</guid>
+      <description>트랜잭션, Beta Lock, Redisson 분산락의 성능 비교 테스트</description>
+    </item>
+    <item>
+      <title>코리아노 BeanPay 고민</title>
+      <link>https://zmfpdl64.github.io/posts/koreano-beanpay-design/</link>
+      <pubDate>Wed, 17 Apr 2024 23:41:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/koreano-beanpay-design/</guid>
+      <description>MSA 환경에서 빈페이 결제 시스템 설계 고민과 분산락 선택 이유</description>
+    </item>
+    <item>
+      <title>[SpringBoot] Spring Batch 이용권 만료</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-batch-pass-expiration/</link>
+      <pubDate>Sun, 17 Dec 2023 19:56:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-batch-pass-expiration/</guid>
+      <description>Spring Batch를 활용한 이용권 만료 처리 구현</description>
+    </item>
+    <item>
+      <title>[SpringBoot] 스프링 배치란?</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-batch-introduction/</link>
+      <pubDate>Sat, 16 Dec 2023 16:38:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-batch-introduction/</guid>
+      <description>Spring Batch의 개념과 주요 용어, 장점 정리</description>
+    </item>
+    <item>
+      <title>주문내역을 내려줄 때 가격 멱등성에 대한 고민</title>
+      <link>https://zmfpdl64.github.io/posts/order-price-idempotency/</link>
+      <pubDate>Sun, 29 Oct 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/order-price-idempotency/</guid>
+      <description>메뉴 가격 변경 시 주문 내역의 가격 일관성 유지 방법</description>
+    </item>
+    <item>
+      <title>[인증/인가] JWT토큰 생성 과정과 원리에 대해서</title>
+      <link>https://zmfpdl64.github.io/posts/jwt-token-guide/</link>
+      <pubDate>Wed, 05 Jul 2023 14:26:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/jwt-token-guide/</guid>
+      <description>JWT 토큰의 생성 과정과 HS256 암호화 원리 설명</description>
+    </item>
   </channel>
 </rss>

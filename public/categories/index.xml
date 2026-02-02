@@ -15,5 +15,19 @@
       <guid>https://zmfpdl64.github.io/categories/tech/</guid>
       <description></description>
     </item>
+    <item>
+      <title>SpringBoot</title>
+      <link>https://zmfpdl64.github.io/categories/springboot/</link>
+      <pubDate>Thu, 20 Jun 2024 19:26:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/categories/springboot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://zmfpdl64.github.io/categories/security/</link>
+      <pubDate>Wed, 05 Jul 2023 14:26:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/categories/security/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
