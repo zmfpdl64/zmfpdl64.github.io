@@ -373,3 +373,64 @@ body {
     background: #2d3a5c !important;
     color: #818cf8 !important;
 }
+
+/* ===================================
+   다크 모드 - 전역 텍스트 색상
+   =================================== */
+
+[data-theme="dark"] * {
+    color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] a {
+    color: #818cf8 !important;
+}
+
+[data-theme="dark"] a:hover {
+    color: #a5b4fc !important;
+}
+
+/* 코드 블록 */
+[data-theme="dark"] code {
+    background: #2d3a5c !important;
+}
+
+[data-theme="dark"] pre {
+    background: #1e2a4a !important;
+}
+
+/* 검색 */
+[data-theme="dark"] #searchInput {
+    background: #243154 !important;
+    border-color: #3d4f7a !important;
+}
+
+[data-theme="dark"] #searchInput::placeholder {
+    color: #94a3b8 !important;
+}
+
+/* 선/테두리 강화 */
+[data-theme="dark"] .post-entry,
+[data-theme="dark"] .post-single,
+[data-theme="dark"] .first-entry,
+[data-theme="dark"] .toc,
+[data-theme="dark"] .portfolio-card {
+    border-color: #4f5f8a !important;
+}
+
+[data-theme="dark"] .header {
+    border-bottom-color: #4f5f8a !important;
+}
+
+[data-theme="dark"] .footer {
+    border-top-color: #4f5f8a !important;
+}
+
+[data-theme="dark"] hr {
+    border-color: #4f5f8a !important;
+    background: #4f5f8a !important;
+}
+
+[data-theme="dark"] blockquote {
+    border-left-color: #818cf8 !important;
+}
