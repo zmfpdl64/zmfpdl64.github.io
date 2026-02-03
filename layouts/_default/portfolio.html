@@ -1,0 +1,323 @@
+{{ define "main" }}
+<div class="portfolio-page">
+  <!-- 소개 섹션 -->
+  <section class="portfolio-hero">
+    <h1>👋 Hi, I'm Woojin Lee</h1>
+    <p class="subtitle">
+      Backend Developer | Full-Stack Enthusiast | Problem Solver
+    </p>
+    <p class="description">
+      코드로 문제를 해결하고, 팀원에게 이해하기 쉽게 도식화로 공유하고,
+      지속적으로 성장하는 개발자입니다.
+    </p>
+    <div class="hero-links">
+      <a href="https://github.com/zmfpdl64" target="_blank" class="hero-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+          />
+        </svg>
+        GitHub
+      </a>
+      <a href="mailto:zmfpdl64@naver.com" class="hero-btn">
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+          />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+        Email
+      </a>
+      <span class="hero-btn primary disabled" title="서비스 준비중">
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+          />
+        </svg>
+        Live Demo (준비중)
+      </span>
+    </div>
+  </section>
+
+  <!-- Tech Stack (공개) -->
+  <section class="portfolio-section">
+    <h2>🛠️ Tech Stack</h2>
+    <div class="tech-grid">
+      <div class="tech-category">
+        <h3>Backend</h3>
+        <div class="tech-tags">
+          <span class="tech-tag java">Java</span>
+          <span class="tech-tag python">Python</span>
+          <span class="tech-tag spring">Spring Boot</span>
+          <span class="tech-tag fastapi">FastAPI</span>
+          <span class="tech-tag">JPA</span>
+          <span class="tech-tag">QueryDSL</span>
+          <span class="tech-tag redis">Redis</span>
+          <span class="tech-tag kafka">Kafka</span>
+          <span class="tech-tag mysql">MySQL</span>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Frontend</h3>
+        <div class="tech-tags">
+          <span class="tech-tag react">React</span>
+          <span class="tech-tag js">JavaScript</span>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>DevOps</h3>
+        <div class="tech-tags">
+          <span class="tech-tag docker">Docker</span>
+          <span class="tech-tag">Nginx</span>
+          <span class="tech-tag aws">AWS</span>
+          <span class="tech-tag">Ubuntu</span>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Test & 문서화</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">JUnit5</span>
+          <span class="tech-tag">Swagger</span>
+          <span class="tech-tag">Jacoco</span>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>기타</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">OAuth 2.0</span>
+          <span class="tech-tag">SSE</span>
+          <span class="tech-tag">JWT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 자격증 (공개) -->
+  <section class="portfolio-section">
+    <h2>🏆 자격증</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-info">
+          <h4>정보처리기사</h4>
+          <p>국가기술자격</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <span class="cert-icon">🗄️</span>
+        <div class="cert-info">
+          <h4>SQLD</h4>
+          <p>SQL 개발자</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <span class="cert-icon">💻</span>
+        <div class="cert-info">
+          <h4>PCCP Lv.1</h4>
+          <p>Java 알고리즘</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 프로젝트 간략 소개 (공개) -->
+  <section class="portfolio-section">
+    <h2>💼 Projects Overview</h2>
+    <div class="project-grid">
+      <a
+        href="https://github.com/zmfpdl64/Review-Analysis"
+        target="_blank"
+        class="project-card"
+      >
+        <div class="project-icon">✈️</div>
+        <h3>AI Flight Simulator</h3>
+        <p class="project-desc">항공기 회피기동 분석 플랫폼</p>
+        <div class="project-tech">
+          <span>FastAPI</span>
+          <span>React</span>
+          <span>Kafka</span>
+        </div>
+      </a>
+      <a
+        href="https://github.com/zmfpdl64/BookMark"
+        target="_blank"
+        class="project-card"
+      >
+        <div class="project-icon">📚</div>
+        <h3>Kbookmark</h3>
+        <p class="project-desc">북마크 수집 플랫폼</p>
+        <div class="project-tech">
+          <span>Spring Boot</span>
+          <span>Next.js</span>
+        </div>
+        <span class="project-live">🌐 kbookmark.co.kr</span>
+      </a>
+      <a
+        href="https://github.com/Team-Koreano/Koreano"
+        target="_blank"
+        class="project-card"
+      >
+        <div class="project-icon">☕</div>
+        <h3>Koreano</h3>
+        <p class="project-desc">MSA 커피 이커머스</p>
+        <div class="project-tech">
+          <span>Spring Boot</span>
+          <span>Kafka</span>
+          <span>Redis</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 입장 코드 입력 섹션 -->
+  <section class="portfolio-section access-section" id="access-section">
+    <h2>🔐 상세 포트폴리오</h2>
+    <div class="access-card" id="access-card">
+      <p>
+        프로젝트 상세 내용, 경력, 수상 경력을 확인하려면 입장 코드를 입력하세요.
+      </p>
+      <div class="access-form">
+        <input type="password" id="access-code" placeholder="입장 코드 입력" />
+        <button onclick="checkAccessCode()" class="access-btn">확인</button>
+      </div>
+      <p
+        class="access-hint"
+        id="access-error"
+        style="display: none; color: #ef4444"
+      >
+        잘못된 코드입니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 상세 포트폴리오 (비공개 - 암호화되어 저장, 코드 입력 후 복호화) -->
+  <div id="private-portfolio"></div>
+
+  <!-- Currently (공개) -->
+  <section class="portfolio-section">
+    <h2>🌱 Currently</h2>
+    <ul class="currently-list">
+      <li>� 데이터 분석 자격증(ADsP) 취득 준비</li>
+      <li>📝 기술 블로그 운영 - 개발 경험 및 학습 기록 공유</li>
+      <li>💡 알고리즘 및 자료구조 꾸준히 학습</li>
+    </ul>
+  </section>
+
+  <!-- Study Section (공개) -->
+  <section class="portfolio-section">
+    <h2>📖 Study & Learning</h2>
+    <div class="study-grid">
+      <a href="/adsp/" class="study-card">
+        <div class="study-icon">📊</div>
+        <h3>ADSP</h3>
+        <p>데이터 분석 준전문가 자격증 학습</p>
+      </a>
+      <a href="/posts/" class="study-card">
+        <div class="study-icon">📝</div>
+        <h3>Blog Posts</h3>
+        <p>개발 경험과 기술 학습 기록</p>
+      </a>
+    </div>
+  </section>
+</div>
+
+<script>
+  // AES 암호화/복호화 유틸리티 (SubtleCrypto API 사용)
+  async function deriveKey(password, salt) {
+    const enc = new TextEncoder();
+    const keyMaterial = await crypto.subtle.importKey(
+      "raw",
+      enc.encode(password),
+      "PBKDF2",
+      false,
+      ["deriveKey"],
+    );
+    return crypto.subtle.deriveKey(
+      { name: "PBKDF2", salt: salt, iterations: 100000, hash: "SHA-256" },
+      keyMaterial,
+      { name: "AES-GCM", length: 256 },
+      false,
+      ["decrypt"],
+    );
+  }
+
+  async function decryptContent(encryptedData, password) {
+    try {
+      const data = Uint8Array.from(atob(encryptedData), (c) => c.charCodeAt(0));
+      const salt = data.slice(0, 16);
+      const iv = data.slice(16, 28);
+      const ciphertext = data.slice(28);
+      const key = await deriveKey(password, salt);
+      const decrypted = await crypto.subtle.decrypt(
+        { name: "AES-GCM", iv: iv },
+        key,
+        ciphertext,
+      );
+      return new TextDecoder().decode(decrypted);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // 암호화된 비공개 콘텐츠 (AES-GCM으로 암호화됨)
+  const ENCRYPTED_CONTENT = "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";
+
+  async function sha256(str) {
+    const buf = await crypto.subtle.digest(
+      "SHA-256",
+      new TextEncoder().encode(str),
+    );
+    return Array.from(new Uint8Array(buf))
+      .map((b) => b.toString(16).padStart(2, "0"))
+      .join("");
+  }
+
+  async function checkAccessCode() {
+    const input = document.getElementById("access-code").value;
+    const hash = await sha256(input);
+    const decrypted = await decryptContent(ENCRYPTED_CONTENT, input);
+    if (decrypted) {
+      localStorage.setItem("pf-" + btoa("a1b2c3d4e5f6g7h8"), hash);
+      showPrivateContent(decrypted);
+    } else {
+      document.getElementById("access-error").style.display = "block";
+      document.getElementById("access-code").value = "";
+    }
+  }
+
+  function showPrivateContent(html) {
+    document.getElementById("access-section").style.display = "none";
+    document.getElementById("private-portfolio").innerHTML = html;
+    document.getElementById("private-portfolio").style.display = "block";
+  }
+
+  // 페이지 로드시 확인
+  document.addEventListener("DOMContentLoaded", async function () {
+    // Enter 키로 제출
+    document
+      .getElementById("access-code")
+      .addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          checkAccessCode();
+        }
+      });
+
+    // 자동 로그인: localStorage에는 hash만 저장되어 있으므로, 자동 복호화는 불가
+    // (보안을 위해 value를 저장하지 않음)
+  });
+</script>
+{{ end }}

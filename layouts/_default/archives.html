@@ -1,0 +1,484 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  <div class="post-description">개발 여정과 성장 기록</div>
+</header>
+
+<!-- 포트폴리오 요약 섹션 -->
+<section class="archive-portfolio">
+  <h2 class="archive-section-title">👤 About Me</h2>
+  <div class="archive-profile">
+    <div class="profile-info">
+      <h3>이우진 (Woojin Lee)</h3>
+      <p class="profile-role">Backend Developer | Full-Stack Enthusiast</p>
+      <p class="profile-desc">
+        코드로 문제를 해결하고, 팀원에게 이해하기 쉽게 도식화로 공유하고,
+        지속적으로 성장하는 개발자입니다.
+      </p>
+      <div class="profile-links">
+        <a href="/portfolio/">📋 Portfolio</a>
+        <a href="https://github.com/zmfpdl64" target="_blank">🔗 GitHub</a>
+        <a href="mailto:zmfpdl64@naver.com">✉️ Email</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 자격증 & 수상 뱃지 -->
+  <div class="profile-badges">
+    <div class="badge-group">
+      <span class="badge-label">📜 자격증</span>
+      <div class="badges">
+        <span class="badge cert">정보처리기사</span>
+        <span class="badge cert">SQLD</span>
+        <span class="badge cert">PCCP Lv.1</span>
+      </div>
+    </div>
+    <div class="badge-group">
+      <span class="badge-label">🏆 수상</span>
+      <div class="badges">
+        <span class="badge award">슈퍼코딩 베스트 프로젝트상</span>
+        <span class="badge award">라인트레이서 2위 (2회)</span>
+      </div>
+    </div>
+    <div class="badge-group">
+      <span class="badge-label">🎓 교육</span>
+      <div class="badges">
+        <span class="badge edu">성결대학교 정보통신과</span>
+        <span class="badge edu">슈퍼코딩 부트캠프</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 타임라인 탭 -->
+<section class="archive-timeline-tabs">
+  <h2 class="archive-section-title">📅 타임라인</h2>
+
+  <!-- 탭 버튼 -->
+  <div class="timeline-tab-buttons">
+    <button class="tab-btn active" data-tab="all">📋 종합</button>
+    <button class="tab-btn" data-tab="career">
+      🎓 교육 & 자격증 & 프로젝트
+    </button>
+    <button class="tab-btn" data-tab="blog">📝 블로그</button>
+  </div>
+
+  <!-- 탭 1: 종합 타임라인 -->
+  <div class="timeline-tab-content active" id="tab-all">
+    <div class="unified-timeline">
+      <!-- 2025 -->
+      <div class="timeline-year">
+        <h3 class="timeline-year-header">2025</h3>
+        <div class="timeline-events">
+          <div class="timeline-event work">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2025.03 ~ 2025.12</span>
+              <h4>✈️ 항공기 회피 시스템 개발</h4>
+              <p>한국연구재단 프로젝트 | 풀스택 개발</p>
+            </div>
+          </div>
+          <div class="timeline-event cert">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2025.09</span>
+              <h4>📜 정보처리기사 취득</h4>
+              <p>국가기술자격</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="timeline-year">
+        <h3 class="timeline-year-header">2024</h3>
+        <div class="timeline-events">
+          <div class="timeline-event work">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2024.12 ~ 2025.12</span>
+              <h4>🏢 엔피코어 연구기획실</h4>
+              <p>풀스택 개발</p>
+            </div>
+          </div>
+          <div class="timeline-event cert">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2024.12</span>
+              <h4>🗄️ SQLD 취득</h4>
+              <p>SQL 개발자 자격증</p>
+            </div>
+          </div>
+          <div class="timeline-event project">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2024.10 ~ 2024.11</span>
+              <h4>📚 KBookmark 개발</h4>
+              <p>Spring Boot, Next.js 기반 북마크 플랫폼</p>
+            </div>
+          </div>
+          <div class="timeline-event cert">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2024</span>
+              <h4>💻 PCCP Lv.1 취득</h4>
+              <p>프로그래머스 코딩역량인증</p>
+            </div>
+          </div>
+          <div class="timeline-event project">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2024.04 ~</span>
+              <h4>☕ Koreano 개발</h4>
+              <p>MSA 기반 커피 E-Commerce 플랫폼</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="timeline-year">
+        <h3 class="timeline-year-header">2023</h3>
+        <div class="timeline-events">
+          <div class="timeline-event award">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2023.10</span>
+              <h4>🏆 슈퍼코딩 베스트 프로젝트상</h4>
+              <p>3차 프로젝트 수상</p>
+            </div>
+          </div>
+          <div class="timeline-event project">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2023.08 ~ 2023.09</span>
+              <h4>🍜 Han-Yip-Man 개발</h4>
+              <p>배달 E-Commerce 플랫폼 | 주문 파트</p>
+            </div>
+          </div>
+          <div class="timeline-event project">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2023.08</span>
+              <h4>🛒 보드게임 E-Commerce 개발</h4>
+              <p>회원/인증/인프라 파트</p>
+            </div>
+          </div>
+          <div class="timeline-event education">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2023.06 ~ 2023.11</span>
+              <h4>🎓 슈퍼코딩 부트캠프</h4>
+              <p>백엔드 개발 과정 수료</p>
+            </div>
+          </div>
+          <div class="timeline-event education">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2023.08</span>
+              <h4>🎓 성결대학교 졸업</h4>
+              <p>정보통신과</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2022 -->
+      <div class="timeline-year">
+        <h3 class="timeline-year-header">2022</h3>
+        <div class="timeline-events">
+          <div class="timeline-event project">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2022.03 ~ 2022.08</span>
+              <h4>☕ 무인카페 STANDER 개발</h4>
+              <p>졸업 프로젝트 | QR 입장 시스템</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2021 -->
+      <div class="timeline-year">
+        <h3 class="timeline-year-header">2021</h3>
+        <div class="timeline-events">
+          <div class="timeline-event award">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2021.05</span>
+              <h4>🥈 라인트레이서 대회 2위</h4>
+              <p>성결대학교</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2020 -->
+      <div class="timeline-year">
+        <h3 class="timeline-year-header">2020</h3>
+        <div class="timeline-events">
+          <div class="timeline-event award">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2020.11</span>
+              <h4>🥈 라인트레이서 대회 2위</h4>
+              <p>성결대학교</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2017 -->
+      <div class="timeline-year">
+        <h3 class="timeline-year-header">2017</h3>
+        <div class="timeline-events">
+          <div class="timeline-event education">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">2017.02</span>
+              <h4>🎓 성결대학교 입학</h4>
+              <p>정보통신과</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 블로그 포스트 (동적) -->
+      {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections
+      }} {{- range $pages.GroupByPublishDate "2006" }} {{- if ne .Key "0001" }}
+      <div class="timeline-year">
+        <h3 class="timeline-year-header">{{ .Key }} 📝</h3>
+        <div class="timeline-events">
+          {{- range .Pages }}
+          <div class="timeline-event blog">
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <span class="event-date">{{ .Date.Format "2006.01.02" }}</span>
+              <h4><a href="{{ .Permalink }}">📝 {{ .Title }}</a></h4>
+              <p>{{ .Summary | plainify | truncate 50 }}</p>
+            </div>
+          </div>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }} {{- end }}
+    </div>
+  </div>
+
+  <!-- 탭 2: 교육 & 자격증 & 프로젝트 타임라인 -->
+  <div class="timeline-tab-content" id="tab-career">
+    <div class="career-sections">
+      <!-- 교육 -->
+      <div class="career-section">
+        <h3 class="career-section-title">🎓 교육</h3>
+        <div class="career-list">
+          <div class="career-item education">
+            <span class="career-date">2017.02 ~ 2023.08</span>
+            <div class="career-info">
+              <h4>성결대학교</h4>
+              <p>정보통신과 졸업</p>
+            </div>
+          </div>
+          <div class="career-item education">
+            <span class="career-date">2023.06 ~ 2023.11</span>
+            <div class="career-info">
+              <h4>슈퍼코딩 부트캠프</h4>
+              <p>백엔드 개발 과정 수료</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 자격증 -->
+      <div class="career-section">
+        <h3 class="career-section-title">📜 자격증</h3>
+        <div class="career-list">
+          <div class="career-item cert">
+            <span class="career-date">2025.09</span>
+            <div class="career-info">
+              <h4>정보처리기사</h4>
+              <p>국가기술자격</p>
+            </div>
+          </div>
+          <div class="career-item cert">
+            <span class="career-date">2024.12</span>
+            <div class="career-info">
+              <h4>SQLD</h4>
+              <p>SQL 개발자 자격증</p>
+            </div>
+          </div>
+          <div class="career-item cert">
+            <span class="career-date">2024</span>
+            <div class="career-info">
+              <h4>PCCP Lv.1</h4>
+              <p>프로그래머스 코딩역량인증</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 수상 -->
+      <div class="career-section">
+        <h3 class="career-section-title">🏆 수상</h3>
+        <div class="career-list">
+          <div class="career-item award">
+            <span class="career-date">2023.10</span>
+            <div class="career-info">
+              <h4>슈퍼코딩 베스트 프로젝트상</h4>
+              <p>3차 프로젝트 수상</p>
+            </div>
+          </div>
+          <div class="career-item award">
+            <span class="career-date">2021.05</span>
+            <div class="career-info">
+              <h4>라인트레이서 대회 2위</h4>
+              <p>성결대학교</p>
+            </div>
+          </div>
+          <div class="career-item award">
+            <span class="career-date">2020.11</span>
+            <div class="career-info">
+              <h4>라인트레이서 대회 2위</h4>
+              <p>성결대학교</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 프로젝트 -->
+      <div class="career-section">
+        <h3 class="career-section-title">💼 프로젝트</h3>
+        <div class="career-list">
+          <div class="career-item project">
+            <span class="career-date">2025.03 ~ 2025.12</span>
+            <div class="career-info">
+              <h4>✈️ 항공기 회피 시스템</h4>
+              <p>한국연구재단 | FastAPI, Kafka, React</p>
+            </div>
+          </div>
+          <div class="career-item project">
+            <span class="career-date">2024.10 ~ 2024.11</span>
+            <div class="career-info">
+              <h4>📚 KBookmark</h4>
+              <p>Spring Boot, Next.js, OAuth 2.0</p>
+            </div>
+          </div>
+          <div class="career-item project">
+            <span class="career-date">2024.04 ~</span>
+            <div class="career-info">
+              <h4>☕ Koreano</h4>
+              <p>MSA 커피 E-Commerce | Spring Boot, Kafka</p>
+            </div>
+          </div>
+          <div class="career-item project">
+            <span class="career-date">2023.08 ~ 2023.09</span>
+            <div class="career-info">
+              <h4>🍜 Han-Yip-Man</h4>
+              <p>배달 E-Commerce | Spring Boot, SSE</p>
+            </div>
+          </div>
+          <div class="career-item project">
+            <span class="career-date">2023.08</span>
+            <div class="career-info">
+              <h4>🛒 보드게임 E-Commerce</h4>
+              <p>Spring Boot, OAuth 2.0, Nginx</p>
+            </div>
+          </div>
+          <div class="career-item project">
+            <span class="career-date">2022.03 ~ 2022.08</span>
+            <div class="career-info">
+              <h4>☕ 무인카페 STANDER</h4>
+              <p>졸업 프로젝트 | QR 입장 시스템</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 탭 3: 블로그 타임라인 -->
+  <div class="timeline-tab-content" id="tab-blog">
+    {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections
+    }} {{- if site.Params.ShowAllPagesInArchive }} {{- $pages =
+    site.RegularPages }} {{- end }} {{- range $pages.GroupByPublishDate "2006"
+    }} {{- if ne .Key "0001" }}
+    <div class="archive-year">
+      {{- $year := replace .Key "0001" "" }}
+      <h3 class="archive-year-header" id="blog-{{ $year }}">
+        <a class="archive-header-link" href="#blog-{{ $year }}">
+          {{- $year -}}
+        </a>
+        <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
+      </h3>
+      {{- range .Pages.GroupByDate "January" }}
+      <div class="archive-month">
+        <h4 class="archive-month-header" id="blog-{{ $year }}-{{ .Key }}">
+          <a class="archive-header-link" href="#blog-{{ $year }}-{{ .Key }}">
+            {{- .Key -}}
+          </a>
+          <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
+        </h4>
+        <div class="archive-posts">
+          {{- range .Pages }} {{- if eq .Kind "page" }}
+          <div class="archive-entry">
+            <h3 class="archive-entry-title entry-hint-parent">
+              {{- .Title | markdownify }} {{- if .Draft }}
+              <span class="entry-hint" title="Draft">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="15"
+                  viewBox="0 -960 960 960"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"
+                  />
+                </svg>
+              </span>
+              {{- end }}
+            </h3>
+            <div class="archive-meta">{{- partial "post_meta.html" . -}}</div>
+            <a
+              class="entry-link"
+              aria-label="post link to {{ .Title | plainify }}"
+              href="{{ .Permalink }}"
+            ></a>
+          </div>
+          {{- end }} {{- end }}
+        </div>
+      </div>
+      {{- end }}
+    </div>
+    {{- end }} {{- end }} {{- if eq (len $pages) 0 }}
+    <div class="no-posts">
+      <p>📝 아직 작성된 글이 없습니다.</p>
+    </div>
+    {{- end }}
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".timeline-tab-content");
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const tabId = this.getAttribute("data-tab");
+
+        // 모든 버튼에서 active 제거
+        tabButtons.forEach((btn) => btn.classList.remove("active"));
+        // 클릭된 버튼에 active 추가
+        this.classList.add("active");
+
+        // 모든 탭 컨텐츠 숨기기
+        tabContents.forEach((content) => content.classList.remove("active"));
+        // 선택된 탭 컨텐츠 표시
+        document.getElementById("tab-" + tabId).classList.add("active");
+      });
+    });
+  });
+</script>
+
+{{- end }}{{/* end main */}}
