@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ThreadLocal on Lee WooJin | Developer</title>
-    <link>http://localhost:6730/tags/threadlocal/</link>
+    <link>https://zmfpdl64.github.io/tags/threadlocal/</link>
     <description>Recent content in ThreadLocal on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 20 Jun 2024 19:26:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:6730/tags/threadlocal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/threadlocal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[SpringBoot] ThreadLocal을 활용한 인증관리</title>
-      <link>http://localhost:6730/posts/springboot-threadlocal-authentication/</link>
+      <link>https://zmfpdl64.github.io/posts/springboot-threadlocal-authentication/</link>
       <pubDate>Thu, 20 Jun 2024 19:26:00 +0900</pubDate>
-      <guid>http://localhost:6730/posts/springboot-threadlocal-authentication/</guid>
+      <guid>https://zmfpdl64.github.io/posts/springboot-threadlocal-authentication/</guid>
       <description>Spring Boot에서 ThreadLocal을 사용한 인증 관리와 주의사항</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hugo on Lee WooJin | Developer</title>
-    <link>http://localhost:6730/tags/hugo/</link>
+    <link>https://zmfpdl64.github.io/tags/hugo/</link>
     <description>Recent content in Hugo on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 02 Feb 2026 12:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:6730/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>첫 글 - Hugo 블로그 시작하기</title>
-      <link>http://localhost:6730/posts/first-post/</link>
+      <link>https://zmfpdl64.github.io/posts/first-post/</link>
       <pubDate>Mon, 02 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:6730/posts/first-post/</guid>
+      <guid>https://zmfpdl64.github.io/posts/first-post/</guid>
       <description>Hugo &#43; PaperMod 테마로 블로그를 시작했습니다!</description>
     </item>
   </channel>

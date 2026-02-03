@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>HS256 on Lee WooJin | Developer</title>
-    <link>http://localhost:6730/tags/hs256/</link>
+    <link>https://zmfpdl64.github.io/tags/hs256/</link>
     <description>Recent content in HS256 on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Wed, 05 Jul 2023 14:26:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:6730/tags/hs256/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/hs256/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[인증/인가] JWT토큰 생성 과정과 원리에 대해서</title>
-      <link>http://localhost:6730/posts/jwt-token-guide/</link>
+      <link>https://zmfpdl64.github.io/posts/jwt-token-guide/</link>
       <pubDate>Wed, 05 Jul 2023 14:26:00 +0900</pubDate>
-      <guid>http://localhost:6730/posts/jwt-token-guide/</guid>
+      <guid>https://zmfpdl64.github.io/posts/jwt-token-guide/</guid>
       <description>JWT 토큰의 생성 과정과 HS256 암호화 원리 설명</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>캐싱 on Lee WooJin | Developer</title>
-    <link>http://localhost:6730/tags/%EC%BA%90%EC%8B%B1/</link>
+    <link>https://zmfpdl64.github.io/tags/%EC%BA%90%EC%8B%B1/</link>
     <description>Recent content in 캐싱 on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 01 May 2023 13:11:15 +0900</lastBuildDate>
-    <atom:link href="http://localhost:6730/tags/%EC%BA%90%EC%8B%B1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/%EC%BA%90%EC%8B%B1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Boot Redis 캐싱 서버 적용하기</title>
-      <link>http://localhost:6730/posts/springboot-redis-caching/</link>
+      <link>https://zmfpdl64.github.io/posts/springboot-redis-caching/</link>
       <pubDate>Mon, 01 May 2023 13:11:15 +0900</pubDate>
-      <guid>http://localhost:6730/posts/springboot-redis-caching/</guid>
+      <guid>https://zmfpdl64.github.io/posts/springboot-redis-caching/</guid>
       <description>Spring Boot 프로젝트에 Redis 캐싱 서버를 적용하는 방법</description>
     </item>
   </channel>

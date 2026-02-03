@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Flush on Lee WooJin | Developer</title>
-    <link>http://localhost:6730/tags/flush/</link>
+    <link>https://zmfpdl64.github.io/tags/flush/</link>
     <description>Recent content in Flush on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:6730/tags/flush/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/flush/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transaction 커밋과 flush 타이밍 이해하기</title>
-      <link>http://localhost:6730/posts/springboot-transaction-commit/</link>
+      <link>https://zmfpdl64.github.io/posts/springboot-transaction-commit/</link>
       <pubDate>Thu, 20 Apr 2023 00:00:00 +0900</pubDate>
-      <guid>http://localhost:6730/posts/springboot-transaction-commit/</guid>
+      <guid>https://zmfpdl64.github.io/posts/springboot-transaction-commit/</guid>
       <description>JPA에서 save()와 saveAndFlush()의 차이점과 트랜잭션 커밋 시점 이해</description>
     </item>
   </channel>
