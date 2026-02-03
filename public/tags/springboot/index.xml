@@ -64,5 +64,19 @@
       <guid>https://zmfpdl64.github.io/posts/order-price-idempotency/</guid>
       <description>메뉴 가격 변경 시 주문 내역의 가격 일관성 유지 방법</description>
     </item>
+    <item>
+      <title>@WithMockUser 테스트 시 getPrincipal Null 해결</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-withmockuser-null/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-withmockuser-null/</guid>
+      <description>Spring Security @WithMockUser 사용 시 getPrincipal()이 null을 반환하는 문제 해결 방법</description>
+    </item>
+    <item>
+      <title>Transaction 커밋과 flush 타이밍 이해하기</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-transaction-commit/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-transaction-commit/</guid>
+      <description>JPA에서 save()와 saveAndFlush()의 차이점과 트랜잭션 커밋 시점 이해</description>
+    </item>
   </channel>
 </rss>

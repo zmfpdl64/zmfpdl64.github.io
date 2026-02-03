@@ -128,6 +128,34 @@
       <description></description>
     </item>
     <item>
+      <title>AOP</title>
+      <link>https://zmfpdl64.github.io/tags/aop/</link>
+      <pubDate>Sun, 28 Apr 2024 00:33:43 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/aop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>https://zmfpdl64.github.io/tags/java/</link>
+      <pubDate>Sun, 28 Apr 2024 00:33:43 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reflection</title>
+      <link>https://zmfpdl64.github.io/tags/reflection/</link>
+      <pubDate>Sun, 28 Apr 2024 00:33:43 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/reflection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>컴파일러</title>
+      <link>https://zmfpdl64.github.io/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC/</link>
+      <pubDate>Sun, 28 Apr 2024 00:33:43 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>MSA</title>
       <link>https://zmfpdl64.github.io/tags/msa/</link>
       <pubDate>Wed, 17 Apr 2024 23:41:00 +0900</pubDate>
@@ -139,6 +167,69 @@
       <link>https://zmfpdl64.github.io/tags/redis/</link>
       <pubDate>Wed, 17 Apr 2024 23:41:00 +0900</pubDate>
       <guid>https://zmfpdl64.github.io/tags/redis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comparator</title>
+      <link>https://zmfpdl64.github.io/tags/comparator/</link>
+      <pubDate>Thu, 29 Feb 2024 21:01:26 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/comparator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TreeSet</title>
+      <link>https://zmfpdl64.github.io/tags/treeset/</link>
+      <pubDate>Thu, 29 Feb 2024 21:01:26 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/treeset/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>자료구조</title>
+      <link>https://zmfpdl64.github.io/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/</link>
+      <pubDate>Thu, 29 Feb 2024 21:01:26 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hash</title>
+      <link>https://zmfpdl64.github.io/tags/hash/</link>
+      <pubDate>Mon, 05 Feb 2024 18:42:14 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/hash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>알고리즘</title>
+      <link>https://zmfpdl64.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Mon, 05 Feb 2024 18:42:14 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GC</title>
+      <link>https://zmfpdl64.github.io/tags/gc/</link>
+      <pubDate>Wed, 20 Dec 2023 21:48:45 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/gc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WeakHashMap</title>
+      <link>https://zmfpdl64.github.io/tags/weakhashmap/</link>
+      <pubDate>Wed, 20 Dec 2023 21:48:45 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/weakhashmap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>메모리</title>
+      <link>https://zmfpdl64.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/</link>
+      <pubDate>Wed, 20 Dec 2023 21:48:45 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%EB%A9%94%EB%AA%A8%EB%A6%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>이펙티브자바</title>
+      <link>https://zmfpdl64.github.io/tags/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%EC%9E%90%EB%B0%94/</link>
+      <pubDate>Wed, 20 Dec 2023 21:48:45 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C%EC%9E%90%EB%B0%94/</guid>
       <description></description>
     </item>
     <item>
@@ -170,6 +261,69 @@
       <description></description>
     </item>
     <item>
+      <title>InvocationHandler</title>
+      <link>https://zmfpdl64.github.io/tags/invocationhandler/</link>
+      <pubDate>Tue, 28 Nov 2023 15:38:26 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/invocationhandler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxy</title>
+      <link>https://zmfpdl64.github.io/tags/proxy/</link>
+      <pubDate>Tue, 28 Nov 2023 15:38:26 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JVM</title>
+      <link>https://zmfpdl64.github.io/tags/jvm/</link>
+      <pubDate>Thu, 09 Nov 2023 13:32:17 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/jvm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS</title>
+      <link>https://zmfpdl64.github.io/tags/cs/</link>
+      <pubDate>Fri, 03 Nov 2023 22:48:10 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/cs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HTTP</title>
+      <link>https://zmfpdl64.github.io/tags/http/</link>
+      <pubDate>Fri, 03 Nov 2023 22:48:10 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/http/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>https://zmfpdl64.github.io/tags/network/</link>
+      <pubDate>Fri, 03 Nov 2023 22:48:10 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DHCP</title>
+      <link>https://zmfpdl64.github.io/tags/dhcp/</link>
+      <pubDate>Thu, 02 Nov 2023 21:51:41 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/dhcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IP</title>
+      <link>https://zmfpdl64.github.io/tags/ip/</link>
+      <pubDate>Thu, 02 Nov 2023 21:51:41 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/ip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NAT</title>
+      <link>https://zmfpdl64.github.io/tags/nat/</link>
+      <pubDate>Thu, 02 Nov 2023 21:51:41 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/nat/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>멱등성</title>
       <link>https://zmfpdl64.github.io/tags/%EB%A9%B1%EB%93%B1%EC%84%B1/</link>
       <pubDate>Sun, 29 Oct 2023 00:00:00 +0900</pubDate>
@@ -188,6 +342,27 @@
       <link>https://zmfpdl64.github.io/tags/%EC%A3%BC%EB%AC%B8/</link>
       <pubDate>Sun, 29 Oct 2023 00:00:00 +0900</pubDate>
       <guid>https://zmfpdl64.github.io/tags/%EC%A3%BC%EB%AC%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BFS</title>
+      <link>https://zmfpdl64.github.io/tags/bfs/</link>
+      <pubDate>Sat, 16 Sep 2023 20:38:12 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/bfs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://zmfpdl64.github.io/tags/python/</link>
+      <pubDate>Sat, 16 Sep 2023 20:38:12 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>백준</title>
+      <link>https://zmfpdl64.github.io/tags/%EB%B0%B1%EC%A4%80/</link>
+      <pubDate>Sat, 16 Sep 2023 20:38:12 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%EB%B0%B1%EC%A4%80/</guid>
       <description></description>
     </item>
     <item>
@@ -216,6 +391,90 @@
       <link>https://zmfpdl64.github.io/tags/%EC%95%94%ED%98%B8%ED%99%94/</link>
       <pubDate>Wed, 05 Jul 2023 14:26:00 +0900</pubDate>
       <guid>https://zmfpdl64.github.io/tags/%EC%95%94%ED%98%B8%ED%99%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stack</title>
+      <link>https://zmfpdl64.github.io/tags/stack/</link>
+      <pubDate>Thu, 29 Jun 2023 14:09:43 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/stack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>프로그래머스</title>
+      <link>https://zmfpdl64.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/</link>
+      <pubDate>Thu, 29 Jun 2023 14:09:43 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>시뮬레이션</title>
+      <link>https://zmfpdl64.github.io/tags/%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/</link>
+      <pubDate>Mon, 15 May 2023 14:34:08 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tree</title>
+      <link>https://zmfpdl64.github.io/tags/tree/</link>
+      <pubDate>Sat, 13 May 2023 17:56:49 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/tree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>순회</title>
+      <link>https://zmfpdl64.github.io/tags/%EC%88%9C%ED%9A%8C/</link>
+      <pubDate>Thu, 11 May 2023 19:28:14 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%EC%88%9C%ED%9A%8C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>완전탐색</title>
+      <link>https://zmfpdl64.github.io/tags/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/</link>
+      <pubDate>Wed, 10 May 2023 14:28:51 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://zmfpdl64.github.io/tags/security/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WithMockUser</title>
+      <link>https://zmfpdl64.github.io/tags/withmockuser/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/withmockuser/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>테스트</title>
+      <link>https://zmfpdl64.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flush</title>
+      <link>https://zmfpdl64.github.io/tags/flush/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/flush/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JPA</title>
+      <link>https://zmfpdl64.github.io/tags/jpa/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/jpa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transaction</title>
+      <link>https://zmfpdl64.github.io/tags/transaction/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/tags/transaction/</guid>
       <description></description>
     </item>
   </channel>
