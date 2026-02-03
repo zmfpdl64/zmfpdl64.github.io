@@ -24,7 +24,7 @@ IPv6는 64비트를 16비트 단위로 점을 찍어 나타냅니다. 1001:db::f
 
 IP 주소 체계는 A, B, C, D, E 다섯 개의 클래스로 구분하는 클래스 기반 할당 방식이며 네트워크 주소와 호스트 주소의 크기로 클래스를 나눕니다.
 
-<div style="color:red;font-weight:bold">[이미지 없음]</div>
+![IP 클래스 구조](https://blog.kakaocdn.net/dna/T1XGF/btszDRBz1AR/AAAAAAAAAAAAAAAAAAAAAJd5zNuMra3q2ItMaMOPSiVDYU-iPmsdwtxPG1Uq8xYF/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=3CdxI%2FjYHBl%2F0vdgxeLCW4K%2FeZY%3D)
 
 - A 클래스
 
@@ -44,7 +44,7 @@ IP 주소 체계는 A, B, C, D, E 다섯 개의 클래스로 구분하는 클래
 
 1100 0000 0000 0000 ~ 1101 1111 1111 1111
 
-<div style="color:red;font-weight:bold">[이미지 없음]</div>
+![IP 주소 예시](https://blog.kakaocdn.net/dna/dydEBW/btszHtzK7mI/AAAAAAAAAAAAAAAAAAAAAPpOkgYtHiH-l1CWLsK0bi5_aHpqWJH8JFW51QP1h2oi/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=Lh0OGiMFl4n%2BcsYX%2FRge%2BllR%2FY0%3D)
 
 위의 글림 예시를 보면 12.0.0.0 의 A클래스 기반의 네트워크 구별 주소가 주어졌고 12.255.255.255는 브로드 캐스트 주소를 제외한 주소들을 컴퓨터에 부여할 수 있는 호스트 주소입니다.
 

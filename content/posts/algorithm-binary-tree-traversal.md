@@ -14,6 +14,8 @@ description: "이진트리의 세 가지 순회 방법(전위, 중위, 후위)�
 
 이진 트리는 루트(Root) 노드에서 시작하여 각 노드는 왼쪽 서브트리(Left Subtree)와 오른쪽 서브트리(Right Subtree)로 이루어져 있습니다. 각 노드의 자식 노드는 **최대 두 개**이기 때문에, 이진 트리는 가장 단순한 형태의 트리 중 하나입니다.
 
+![이진트리 구조](https://blog.kakaocdn.net/dna/T5moS/btseK3pFNsu/AAAAAAAAAAAAAAAAAAAAAHu7fK4Mo4lyX0_0dR-LypvPDpBJjLAsN0zxJVbcSxUM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=Mp0S8x3QIe00NI5kZ8%2FIt12v2X0%3D)
+
 ## 이진트리의 활용 분야
 
 - **데이터베이스:** 색인(Index)을 만드는 데 사용
@@ -47,6 +49,8 @@ description: "이진트리의 세 가지 순회 방법(전위, 중위, 후위)�
 
 ### 전위 순회 (Preorder)
 
+![전위 순회](https://blog.kakaocdn.net/dna/cSxn0z/btse8illdfV/AAAAAAAAAAAAAAAAAAAAAPG8aAgRbdAntLd01UY-RkkPv0BBi9CXhaa3CZMoZyjb/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=tI7vsLsIkZSUpMFw4l3GM5IFd8A%3D)
+
 **순서:** 중앙 → 왼쪽 → 오른쪽
 
 **결과:** 1 → 2 → 4 → 5 → 3 → 6 → 7
@@ -64,6 +68,8 @@ def pre_order(node):
 
 ### 중위 순회 (Inorder)
 
+![중위 순회](https://blog.kakaocdn.net/dna/bgOH8a/btseQkjVyNW/AAAAAAAAAAAAAAAAAAAAANrBRRCRhWOLDjQ4JykvjXoy0xhs3RL2_h-M4DpXr-Pc/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=1a8X3fQUyCtk4fiQZ%2FM5fmI%2Farg%3D)
+
 **순서:** 왼쪽 → 중앙 → 오른쪽
 
 **결과:** 4 → 2 → 5 → 1 → 6 → 3 → 7
@@ -80,6 +86,8 @@ def in_order(node):
 중위는 **print가 중간에** 나오기 때문에 중위
 
 ### 후위 순회 (Postorder)
+
+![후위 순회](https://blog.kakaocdn.net/dna/c9CRwa/btseQSHcl8o/AAAAAAAAAAAAAAAAAAAAAN1G7n_46lpnR_2zA5rVVq0PT-6pob2gY2c1PRf1veOp/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=yEtQSo%2BbelE6uon%2B86Lz3gwgaA8%3D)
 
 **순서:** 왼쪽 → 오른쪽 → 중앙
 

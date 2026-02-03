@@ -10,11 +10,6 @@ TocOpen: false
 description: "Spring Security @WithMockUser 사용 시 getPrincipal()이 null을 반환하는 문제 해결 방법"
 ---
 
-## 참고 이미지
-
-<div style="color:red;font-weight:bold">[이미지 없음]</div>
-<div style="color:red;font-weight:bold">[이미지 없음]</div>
-
 ## 문제 상황
 
 테스트 코드를 작성할 때 Security에서 제공하는 `@WithMockUser` 어노테이션을 사용해서 인증 테스트를 수행했습니다. 하지만 `Authentication`의 `getPrincipal()` 메소드를 사용할 때 null이 반환되는 현상이 발생해서 테스트를 통과하지 못했습니다.

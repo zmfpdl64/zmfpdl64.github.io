@@ -24,6 +24,8 @@ description: "트랜잭션, Beta Lock, Redisson 분산락의 성능 비교 테�
 
 ## 1. 트랜잭션만 사용한 결과
 
+![트랜잭션 테스트](https://i.imgur.com/bfjdGvM.png)
+
 ```java
 @Transactional
 public void notUseLockTest(String lockName, Integer userId) {
@@ -43,6 +45,8 @@ public void notUseLockTest(String lockName, Integer userId) {
 트랜잭션만 사용하면 MySQL의 기본 격리 수준(Repeatable Read)에서 **Lost Update 문제가 발생**하여 데이터 정합성이 낮아집니다.
 
 ## 2. Beta Lock 사용
+
+![Beta Lock 테스트](https://i.imgur.com/yaCpU4T.png)
 
 ```java
 @Transactional
@@ -67,6 +71,8 @@ public void betaLockTest(String lockName, Integer userId) {
 - 우수한 사용성
 
 ## 3. Redisson 분산락
+
+![Redisson 분산락 테스트](https://i.imgur.com/wxWgP5Q.png)
 
 ```java
 @DistributedLock(key = "#lockName.concat('-').concat(#userId)")

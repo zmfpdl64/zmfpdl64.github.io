@@ -12,6 +12,8 @@ description: "해시 자료구조의 원리, 충돌 회피 방법(Chaining, Open
 
 해시 자료구조는 16자리의 번호의 일부분을 index로 사용하는 자료구조입니다.
 
+![해시 테이블 구조](https://i.imgur.com/PyViybd.png)
+
 ## 해시 함수란?
 
 임의 길이의 데이터를 **고정된 길이의 데이터**로 대응시키는 함수
@@ -24,11 +26,15 @@ description: "해시 자료구조의 원리, 충돌 회피 방법(Chaining, Open
 
 ### 1. Chaining
 
+![Chaining 방식](https://i.imgur.com/0egbRba.png)
+
 Key가 중복된 노드를 **LinkedList로 연결**하여 관리합니다. Java의 STL 자료구조는 Chaining 방식을 사용합니다.
 
 **주의사항:** 충돌이 빈번할수록 성능이 안 좋아지고, 해시 충돌이 한 곳으로 몰렸다면 O(N)의 시간 복잡도를 가질 수 있습니다.
 
 ### 2. Open Addressing
+
+![Open Addressing 방식](https://i.imgur.com/ZaD3M7G.png)
 
 해시 충돌이 발생하면 **다음 배열에 비어있는 곳에 저장**하는 방식입니다.
 
@@ -36,12 +42,16 @@ Key가 중복된 노드를 **LinkedList로 연결**하여 관리합니다. Java�
 
 #### Linear Probing
 
+![Linear Probing](https://i.imgur.com/yPnbejW.png)
+
 충돌 발생 시 오른쪽으로 **1칸씩** 이동하는 방식
 
 - **장점:** Cache hit rate가 높다
 - **단점:** Clustering이 생겨 성능에 영향을 줄 수 있다
 
 #### Quadratic Probing
+
+![Quadratic Probing](https://i.imgur.com/yq2CK5n.png)
 
 충돌 발생 시 오른쪽으로 **1, 4, 9... 칸씩 제곱으로** 이동하는 방식
 
