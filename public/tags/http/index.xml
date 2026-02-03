@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>HTTP on Lee WooJin | Developer</title>
-    <link>https://zmfpdl64.github.io/tags/http/</link>
+    <link>http://localhost:6730/tags/http/</link>
     <description>Recent content in HTTP on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 03 Nov 2023 22:48:10 +0900</lastBuildDate>
-    <atom:link href="https://zmfpdl64.github.io/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:6730/tags/http/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTTP/1.0, HTTP/1.1, HTTP/2의 특징과 차이점</title>
-      <link>https://zmfpdl64.github.io/posts/network-http-versions/</link>
+      <link>http://localhost:6730/posts/network-http-versions/</link>
       <pubDate>Fri, 03 Nov 2023 22:48:10 +0900</pubDate>
-      <guid>https://zmfpdl64.github.io/posts/network-http-versions/</guid>
+      <guid>http://localhost:6730/posts/network-http-versions/</guid>
       <description>HTTP 버전별 특징과 발전 과정, RTT 문제 해결 방법 정리</description>
     </item>
   </channel>

@@ -83,9 +83,9 @@ buildExpired = false
     url = "/tags/"
     weight = 3
   [[menu.main]]
-    identifier = "adsp"
-    name = "ADSP"
-    url = "/adsp/"
+    identifier = "portfolio"
+    name = "Portfolio"
+    url = "/portfolio/"
     weight = 4
   [[menu.main]]
     identifier = "archives"
@@ -97,7 +97,11 @@ buildExpired = false
     name = "Search"
     url = "/search/"
     weight = 6
-
+  [[menu.main]]
+    identifier = "adsp"
+    name = "ADSP"
+    url = "/adsp/"
+    weight = 7
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
