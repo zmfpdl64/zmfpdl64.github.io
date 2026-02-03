@@ -2,46 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Java on Lee WooJin | Developer</title>
-    <link>http://localhost:1313/categories/java/</link>
+    <link>https://zmfpdl64.github.io/categories/java/</link>
     <description>Recent content in Java on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 28 Apr 2024 00:33:43 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reflection 메소드 매개변수 필드명이 arg0, arg1로 나오는 문제 해결</title>
-      <link>http://localhost:1313/posts/java-reflection-parameter-names/</link>
+      <link>https://zmfpdl64.github.io/posts/java-reflection-parameter-names/</link>
       <pubDate>Sun, 28 Apr 2024 00:33:43 +0900</pubDate>
-      <guid>http://localhost:1313/posts/java-reflection-parameter-names/</guid>
+      <guid>https://zmfpdl64.github.io/posts/java-reflection-parameter-names/</guid>
       <description>Java Reflection에서 메소드 매개변수 이름이 arg0, arg1로 나오는 원인과 해결 방법</description>
     </item>
     <item>
       <title>TreeSet의 구조와 Comparator 주의사항</title>
-      <link>http://localhost:1313/posts/java-treeset-comparator/</link>
+      <link>https://zmfpdl64.github.io/posts/java-treeset-comparator/</link>
       <pubDate>Thu, 29 Feb 2024 21:01:26 +0900</pubDate>
-      <guid>http://localhost:1313/posts/java-treeset-comparator/</guid>
+      <guid>https://zmfpdl64.github.io/posts/java-treeset-comparator/</guid>
       <description>TreeSet과 HashSet의 동등성 비교 방식 차이와 주의사항</description>
     </item>
     <item>
       <title>이펙티브 자바 - 다 쓴 객체 참조를 해제하라</title>
-      <link>http://localhost:1313/posts/java-release-object-references/</link>
+      <link>https://zmfpdl64.github.io/posts/java-release-object-references/</link>
       <pubDate>Wed, 20 Dec 2023 21:48:45 +0900</pubDate>
-      <guid>http://localhost:1313/posts/java-release-object-references/</guid>
+      <guid>https://zmfpdl64.github.io/posts/java-release-object-references/</guid>
       <description>다 쓴 객체 참조로 인한 메모리 누수 방지 방법</description>
     </item>
     <item>
       <title>Java 동적 프록시 (Dynamic Proxy) 이해하기</title>
-      <link>http://localhost:1313/posts/java-dynamic-proxy/</link>
+      <link>https://zmfpdl64.github.io/posts/java-dynamic-proxy/</link>
       <pubDate>Tue, 28 Nov 2023 15:38:26 +0900</pubDate>
-      <guid>http://localhost:1313/posts/java-dynamic-proxy/</guid>
+      <guid>https://zmfpdl64.github.io/posts/java-dynamic-proxy/</guid>
       <description>Java에서 동적 프록시를 사용하는 방법과 한계점</description>
     </item>
     <item>
       <title>Java GC (Garbage Collection) 이해하기</title>
-      <link>http://localhost:1313/posts/java-gc-garbage-collection/</link>
+      <link>https://zmfpdl64.github.io/posts/java-gc-garbage-collection/</link>
       <pubDate>Thu, 09 Nov 2023 13:32:17 +0900</pubDate>
-      <guid>http://localhost:1313/posts/java-gc-garbage-collection/</guid>
+      <guid>https://zmfpdl64.github.io/posts/java-gc-garbage-collection/</guid>
       <description>Java GC의 동작 원리와 다양한 GC 방식 소개</description>
+    </item>
+    <item>
+      <title>정적 팩토리 메소드의 장단점</title>
+      <link>https://zmfpdl64.github.io/posts/java-static-factory-method/</link>
+      <pubDate>Fri, 07 Jul 2023 00:15:20 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/java-static-factory-method/</guid>
+      <description>이펙티브 자바 - 정적 팩토리 메소드의 장점과 활용 방법</description>
     </item>
   </channel>
 </rss>

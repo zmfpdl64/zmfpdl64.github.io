@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>완전탐색 on Lee WooJin | Developer</title>
-    <link>http://localhost:1313/tags/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/</link>
+    <link>https://zmfpdl64.github.io/tags/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/</link>
     <description>Recent content in 완전탐색 on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Wed, 10 May 2023 14:28:51 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/%EC%99%84%EC%A0%84%ED%83%90%EC%83%89/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>프로그래머스 양궁대회 - 완전 탐색으로 최적의 화살 배치 찾기</title>
-      <link>http://localhost:1313/posts/programmers-archery-competition/</link>
+      <link>https://zmfpdl64.github.io/posts/programmers-archery-competition/</link>
       <pubDate>Wed, 10 May 2023 14:28:51 +0900</pubDate>
-      <guid>http://localhost:1313/posts/programmers-archery-competition/</guid>
+      <guid>https://zmfpdl64.github.io/posts/programmers-archery-competition/</guid>
       <description>프로그래머스 양궁대회 문제를 itertools.product를 활용한 완전 탐색으로 해결하는 방법</description>
     </item>
   </channel>

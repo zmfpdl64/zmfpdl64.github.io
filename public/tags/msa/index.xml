@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MSA on Lee WooJin | Developer</title>
-    <link>http://localhost:1313/tags/msa/</link>
+    <link>https://zmfpdl64.github.io/tags/msa/</link>
     <description>Recent content in MSA on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Wed, 17 Apr 2024 23:41:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/msa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/msa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>코리아노 BeanPay 고민</title>
-      <link>http://localhost:1313/posts/koreano-beanpay-design/</link>
+      <link>https://zmfpdl64.github.io/posts/koreano-beanpay-design/</link>
       <pubDate>Wed, 17 Apr 2024 23:41:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/koreano-beanpay-design/</guid>
+      <guid>https://zmfpdl64.github.io/posts/koreano-beanpay-design/</guid>
       <description>MSA 환경에서 빈페이 결제 시스템 설계 고민과 분산락 선택 이유</description>
     </item>
   </channel>

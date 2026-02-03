@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>시뮬레이션 on Lee WooJin | Developer</title>
-    <link>http://localhost:1313/tags/%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/</link>
+    <link>https://zmfpdl64.github.io/tags/%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/</link>
     <description>Recent content in 시뮬레이션 on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 15 May 2023 14:34:08 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>프로그래머스 프렌즈 4블록 - 2x2 블록 제거 시뮬레이션</title>
-      <link>http://localhost:1313/posts/programmers-friends-4-block/</link>
+      <link>https://zmfpdl64.github.io/posts/programmers-friends-4-block/</link>
       <pubDate>Mon, 15 May 2023 14:34:08 +0900</pubDate>
-      <guid>http://localhost:1313/posts/programmers-friends-4-block/</guid>
+      <guid>https://zmfpdl64.github.io/posts/programmers-friends-4-block/</guid>
       <description>프로그래머스 프렌즈 4블록 문제를 2D 배열 시뮬레이션으로 해결하는 방법</description>
     </item>
   </channel>
