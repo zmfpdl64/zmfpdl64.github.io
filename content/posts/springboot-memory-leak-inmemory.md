@@ -26,7 +26,7 @@ description: "In-Memory 인증번호 관리 시 발생하는 메모리 누수 �
 
 **key를 요청하고 검증을 하지 않았을 때 계속해서 데이터가 Map에 참조하고 있어 GC가 메모리를 수거하지 않습니다.**
 
-![메모리 누수 문제](https://i.imgur.com/TCyZ5kB.png)
+![메모리 누수 문제](/images/posts/springboot-memory-leak-inmemory/메모리-누수-문제.png)
 
 ### 문제 시나리오
 
@@ -38,7 +38,7 @@ description: "In-Memory 인증번호 관리 시 발생하는 메모리 누수 �
 
 ## 해결방법
 
-![스케줄링 해결](https://i.imgur.com/Vs10nVm.png)
+![스케줄링 해결](/images/posts/springboot-memory-leak-inmemory/스케줄링-해결.png)
 
 스케줄링을 활용하여 일정 시간마다 만료된 키를 제거:
 
@@ -57,12 +57,12 @@ public void clearAuthenticationMap() {
 
 ## 핵심 포인트
 
-![메모리 정리 결과](https://blog.kakaocdn.net/dna/mUHyt/btsH6BDMayS/AAAAAAAAAAAAAAAAAAAAALS2cfycc3SFRLHSSobDgRGNsCj366OdRYv0pumEm6D4/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=sjaOlbQmLWPf0qIbPRIrwYocpmg%3D)
+![메모리 정리 결과](/images/posts/springboot-memory-leak-inmemory/메모리-정리-결과.png)
 
 - `@Scheduled` 어노테이션으로 주기적 정리 작업 실행
 - 만료 시간이 지난 데이터만 선택적 제거
 - GC가 메모리를 정상적으로 수거할 수 있도록 참조 해제
 
-![최종 구조](https://blog.kakaocdn.net/dna/tIhgg/btsH5NLEMbq/AAAAAAAAAAAAAAAAAAAAAHge8sgzaRe2bxBrrDXwIZPFRRdd4YCWrwcZe-D0FzS5/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=qLnLgfJvATWx5h70cVtHnNfdY44%3D)
+![최종 구조](/images/posts/springboot-memory-leak-inmemory/최종-구조.png)
 
 > **결론**: In-Memory 데이터 저장 시 반드시 만료/정리 로직을 함께 구현해야 합니다.

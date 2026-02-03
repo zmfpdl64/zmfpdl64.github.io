@@ -20,7 +20,7 @@ description: "프로그래머스 후보키 문제를 유일성과 최소성 조�
 
 데이터베이스에서는 후보키(candidate key)라는 개념을 사용하여 테이블에서 튜플을 유일하게 식별할 수 있는 속성 또는 속성의 집합을 의미합니다.
 
-![후보키 개념](https://blog.kakaocdn.net/dna/Oh6XW/btsecvSVIKy/AAAAAAAAAAAAAAAAAAAAAI2emp9IGWI_AqJuvyOKx09flCLv0GcNKgrYkUzWrvsp/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=1XNsmcyC65SJAL3RmDcyzaI36L0%3D)
+![후보키 개념](/images/posts/programmers-candidate-key/후보키-개념.png)
 
 ## 후보키의 조건
 

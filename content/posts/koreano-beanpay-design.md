@@ -12,7 +12,7 @@ description: "MSA 환경에서 빈페이 결제 시스템 설계 고민과 분�
 
 ## 빈페이로 결제하게 된 이유
 
-![BeanPay 구조](https://i.imgur.com/RI7HOCT.png)
+![BeanPay 구조](/images/posts/koreano-beanpay-design/BeanPay-구조.png)
 
 내부 결제 로직과 외부 API 충전 기능을 분리함으로써 외부 API 장애 시 영향을 최소화합니다.
 
@@ -58,7 +58,7 @@ description: "MSA 환경에서 빈페이 결제 시스템 설계 고민과 분�
 
 ## 최종 선택: Redis 분산락
 
-![분산락 적용](https://i.imgur.com/x5Uehde.png)
+![분산락 적용](/images/posts/koreano-beanpay-design/분산락-적용.png)
 
 **분산환경일 때 분산락을 적용하면 각 서버가 동일한 락을 공유하고 상호 배제적으로 작업할 수 있기 때문입니다.**
 

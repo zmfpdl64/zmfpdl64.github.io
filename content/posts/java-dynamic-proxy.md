@@ -18,7 +18,7 @@ description: "Java에서 동적 프록시를 사용하는 방법과 한계점"
 
 이러한 문제점들을 해결해주는 것이 바로 **동적 프록시**입니다.
 
-![동적 프록시 개념](https://blog.kakaocdn.net/dna/cGUWfO/btsA8OvsIjH/AAAAAAAAAAAAAAAAAAAAAE_PLiaGZSo1Dzz8mbLY_gf6V22RnLv9MxBWphMrkAqW/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=c4fkhRklho8FfFWNm5JHDnyxfy0%3D)
+![동적 프록시 개념](/images/posts/java-dynamic-proxy/동적-프록시-개념.png)
 
 ## 자바에서 동적 프록시를 사용하기 위한 클래스
 
@@ -114,7 +114,7 @@ public class JavaReflection {
 
 Proxy를 생성하기 위해서 생성자에 `클래스 로더`, `서비스 로직 인터페이스`, `부가 기능 구현체`를 전달하여 동적 프록시를 생성합니다.
 
-![Proxy 구조](https://blog.kakaocdn.net/dna/k6k1t/btsA2tzBi27/AAAAAAAAAAAAAAAAAAAAAGRjbw474Et3kU4Gq9gYieQoW_RByDVbDCgtZdD9aYpl/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=nBUW3yGp5KB5%2BeyCqrNixVvp080%3D)
+![Proxy 구조](/images/posts/java-dynamic-proxy/Proxy-구조.png)
 
 ### 실행 결과 (어노테이션 적용 시)
 
@@ -136,9 +136,9 @@ Proxy를 생성하기 위해서 생성자에 `클래스 로더`, `서비스 로�
 1. **인터페이스 기반**으로 객체를 다루기 때문에, 특정 클래스의 특정 메소드만 로깅하고 싶을 때 부분적으로 걸어줄 수 없습니다.
 2. 구현체로 받게 되면 `ClassCastException`이 발생합니다.
 
-![동적 프록시의 한계](https://blog.kakaocdn.net/dna/dksxRo/btsA8rmFeq5/AAAAAAAAAAAAAAAAAAAAAB_3lSXNK9rGgRQnAqKjUUe9N6ReoyLaGZWZi26qo1KX/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=lGOmkFXca%2BKKR5dI6Q5aC1J139g%3D)
+![동적 프록시의 한계](/images/posts/java-dynamic-proxy/동적-프록시의-한계.png)
 
-![CGLIB 해결책](https://blog.kakaocdn.net/dna/9njLJ/btsAWhT8EVB/AAAAAAAAAAAAAAAAAAAAABkLIvuNX5MGOC8JxS7ref8_RtbLqEW7hDugLmZhckdQ/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=vTjgM78ud%2Brwax%2BTiGktz59CcQI%3D)
+![CGLIB 해결책](/images/posts/java-dynamic-proxy/CGLIB-해결책.png)
 
 그래서 이러한 문제점들 때문에 Spring에서는 **CGLIB**를 활용해서 클래스 기반의 동적 프록시를 생성하고 해결합니다.
 

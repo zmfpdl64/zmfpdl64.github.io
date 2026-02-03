@@ -18,7 +18,7 @@ description: "백준 1430번 공격 문제를 BFS와 heapq를 활용하여 해�
 
 해당 문제는 적이 존재하고 타워에서 사정거리 안에 든 적에게 에너지를 모두 담아 공격합니다. 만약 사정거리에 닿지 않는다면 근처 타워에게 에너지를 전달하고, 전달하는 과정에서 에너지가 반으로 줄어듭니다.
 
-![백준 1430 공격 문제](https://blog.kakaocdn.net/dna/cRksuk/btsuk1VTbDy/AAAAAAAAAAAAAAAAAAAAAOrWv2Td69Ype4PPSgvLKbnhVGbMwIcJB_2oArqYuONK/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=l78PRRVdoaSdhXt20hwK%2FOny79E%3D)
+![백준 1430 공격 문제](/images/posts/boj-1430-attack/백준-1430-공격-문제.png)
 
 ## 문제 조건
 

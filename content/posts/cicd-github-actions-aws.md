@@ -22,29 +22,29 @@ description: "Github Actions와 AWS S3, CodeDeploy를 사용하여 Spring Boot �
 
 ## S3 버킷 생성
 
-![S3 버킷 생성](https://i.imgur.com/rjsDZWv.png)
+![S3 버킷 생성](/images/posts/cicd-github-actions-aws/S3-버킷-생성.png)
 
 버킷을 생성할 지역을 선정해 주고 생성합니다.
 
 ## S3 접근 키 생성
 
-![S3 접근 키](https://i.imgur.com/yhc2RSt.png)
+![S3 접근 키](/images/posts/cicd-github-actions-aws/S3-접근-키.png)
 
 **비밀 엑세스키는 생성 시에 보관해 두어야 합니다.**
 
 ## EC2 생성
 
-![EC2 생성](https://i.imgur.com/7mDhgMB.png)
+![EC2 생성](/images/posts/cicd-github-actions-aws/EC2-생성.png)
 
 ## EC2 규칙 생성 (보안그룹)
 
-![보안그룹 설정](https://i.imgur.com/o2yTeXA.png)
+![보안그룹 설정](/images/posts/cicd-github-actions-aws/보안그룹-설정.png)
 
 80번 포트와 8080번 포트로 접근하는 요청은 모든 아이피를 허용하겠다는 규칙입니다.
 
 ## EC2가 S3, CodeDeploy에 접근하기 위한 역할 적용
 
-![IAM 역할 설정](https://i.imgur.com/ueko0pf.png)
+![IAM 역할 설정](/images/posts/cicd-github-actions-aws/IAM-역할-설정.png)
 
 S3와 CodeDeploy에 접근할 수 있는 권한을 설정해 주었습니다.
 
@@ -52,7 +52,7 @@ EC2 보안 IAM 역할 수정 페이지에서 적용해주면 됩니다.
 
 ## EC2 내에 서버를 실행할 수 있게 프로그램 설치
 
-![EC2 프로그램 설치](https://i.imgur.com/h6KSzbS.png)
+![EC2 프로그램 설치](/images/posts/cicd-github-actions-aws/EC2-프로그램-설치.png)
 
 ### AWS Corretto JDK 17 설치
 
@@ -89,7 +89,7 @@ sudo service codedeploy.agent status
 
 ## CodeDeploy IAM 권한 설정
 
-![CodeDeploy IAM](https://i.imgur.com/VCt3W8G.png)
+![CodeDeploy IAM](/images/posts/cicd-github-actions-aws/CodeDeploy-IAM.png)
 
 EC2/온프레미스 환경으로 설정해야 합니다.
 
@@ -109,7 +109,7 @@ project/
 
 ### deploy.yml 작성
 
-![Github Actions Workflow](https://i.imgur.com/P7DRMHd.png)
+![Github Actions Workflow](/images/posts/cicd-github-actions-aws/Github-Actions-Workflow.png)
 
 ```yaml
 name: Build and Deploy Spring Boot to AWS EC2
@@ -169,7 +169,7 @@ jobs:
 
 ### appspec.yml 작성
 
-![appspec.yml](https://i.imgur.com/cJkSj6r.png)
+![appspec.yml](/images/posts/cicd-github-actions-aws/appspecyml.png)
 
 ```yaml
 version: 0.0
@@ -197,7 +197,7 @@ hooks:
 
 ### deploy.sh 코드 작성
 
-![deploy.sh](https://i.imgur.com/xKIivgO.png)
+![deploy.sh](/images/posts/cicd-github-actions-aws/deploysh.png)
 
 ```bash
 #!/usr/bin/env bash

@@ -14,7 +14,7 @@ description: "JWT 토큰의 생성 과정과 HS256 암호화 원리 설명"
 
 **JWT(JSON WEB TOKEN)은 당사자 간에 정보를 JSON 개체로 안전하게 전송하기 위한 간결하고 독립적인 방법을 정의하는 개방형 표준**입니다.
 
-![JWT 토큰 구조](https://blog.kakaocdn.net/dna/Kqkkv/btsmtc526RV/AAAAAAAAAAAAAAAAAAAAAAI2WgHxpZTdoLfkSEGnOTuSoWGVrQWR34M8Fo_cRWhR/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=huTJHdoE14wATxR07eyjIO5H928%3D)
+![JWT 토큰 구조](/images/posts/jwt-token-guide/JWT-토큰-구조.png)
 
 토큰은 기본적으로 서버에게 본인 확인을 증명하는 수단으로 이해할 수 있습니다.
 
@@ -22,7 +22,7 @@ description: "JWT 토큰의 생성 과정과 HS256 암호화 원리 설명"
 
 HS256은 HMAC SHA 256의 약자로, 헤더, 페이로드, 비밀키를 SHA256으로 암호화하는 방식입니다.
 
-![JWT 인증 흐름](https://blog.kakaocdn.net/dna/dTWl3S/btsmrB6XisC/AAAAAAAAAAAAAAAAAAAAAG3e4OYSsxvYtHT3GiDWVPCfRp215LLLScgAGRrdyTZT/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=pso%2FxbNlGbKMssl2fSf4JOX8xzY%3D)
+![JWT 인증 흐름](/images/posts/jwt-token-guide/JWT-인증-흐름.png)
 
 ## 1. 클라이언트 로그인
 

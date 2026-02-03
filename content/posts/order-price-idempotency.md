@@ -12,7 +12,7 @@ description: "메뉴 가격 변경 시 주문 내역의 가격 일관성 유지 
 
 ## 🤔 Problem
 
-![가격 변경 문제](https://i.imgur.com/bfjdGvM.png)
+![가격 변경 문제](/images/posts/order-price-idempotency/가격-변경-문제.png)
 
 기존 제육 1000원
 
@@ -32,13 +32,13 @@ description: "메뉴 가격 변경 시 주문 내역의 가격 일관성 유지 
 
 ### 1. 주문내역을 저장하는 메뉴, 옵션 히스토리 테이블을 하나 더 만들어 관리
 
-![히스토리 테이블 방식](https://i.imgur.com/yaCpU4T.png)
+![히스토리 테이블 방식](/images/posts/order-price-idempotency/히스토리-테이블-방식.png)
 
 주문했을 당시의 메뉴와 옵션들의 정보를 저장하는 테이블을 만들어 관리하여 기존의 메뉴를 PATCH 방식으로 부분 수정을 해도 주문 정보를 내려줄때는 메뉴 히스토리와 옵션 히스토리를 참조하여 반환합니다.
 
 ### 2. 메뉴를 PATCH 방식이 아닌 PUT 방식으로 관리
 
-![PUT 방식 관리](https://i.imgur.com/wxWgP5Q.png)
+![PUT 방식 관리](/images/posts/order-price-idempotency/PUT-방식-관리.png)
 
 기존의 PATCH 방식의 부분 데이터 변경이 아닌 PUT 방식의 메뉴 변경을 구현했습니다. 그래서 메뉴의 변경전의 정보를 참조하고 있기 때문에 메뉴의 정보를 변경해도 변경 전의 메뉴를 참조하고 있어 주문내역의 일관성을 가질 수 있습니다.
 

@@ -14,11 +14,11 @@ description: "TreeSet과 HashSet의 동등성 비교 방식 차이와 주의사�
 
 TreeSet은 필드로 `NavigableMap` 인터페이스를 가지고 있으며, `TreeMap` 클래스가 해당 인터페이스를 구현하는 구조를 가지고 있습니다.
 
-![TreeSet 클래스 구조](https://i.imgur.com/AlnGhV5.png)
+![TreeSet 클래스 구조](/images/posts/java-treeset-comparator/TreeSet-클래스-구조.png)
 
 TreeSet 생성자가 호출되면 `m` 필드에 `TreeMap` 클래스가 할당됩니다.
 
-![TreeSet 생성자](https://i.imgur.com/xkEmqUQ.png)
+![TreeSet 생성자](/images/posts/java-treeset-comparator/TreeSet-생성자.png)
 
 ## 문제점 발견
 
@@ -36,7 +36,7 @@ System.out.println(treeSet.size()); // 결과: 1
 
 x만 비교하여 TreeSet 자료구조를 사용했을 때는 1개의 요소밖에 존재하지 않았습니다. HashSet이라면 객체의 `hashCode()`와 `equals()`를 비교하여 2라는 결과가 나왔을 텐데...
 
-![x만 비교 시 결과](https://i.imgur.com/dVwtEka.png)
+![x만 비교 시 결과](/images/posts/java-treeset-comparator/x만-비교-시-결과.png)
 
 ### 예시: x와 y 모두 비교할 때
 
@@ -51,7 +51,7 @@ System.out.println(treeSet.size()); // 결과: 2
 
 x와 y 모두 비교하는 코드를 작성했더니 원하는 결과가 나왔습니다.
 
-![x, y 모두 비교 시 결과](https://i.imgur.com/ALInNS0.png)
+![x, y 모두 비교 시 결과](/images/posts/java-treeset-comparator/x-y-모두-비교-시-결과.png)
 
 ## 원인 분석
 
@@ -61,11 +61,11 @@ TreeSet 자료구조는 필드로 `TreeMap`을 가지고 있으며, 저장하는
 
 실제 객체를 추가할 때는 key 값으로 객체의 필드 값을 받아오고, **사용자가 정의한 compare 함수를 통해 비교**합니다. 값이 동일하다면 동일한 객체로 인식하고 현재 노드에 업캐스팅한 Object를 저장하는 방식입니다.
 
-![TreeMap put 메소드](https://i.imgur.com/uYUkNDW.png)
+![TreeMap put 메소드](/images/posts/java-treeset-comparator/TreeMap-put-메소드.png)
 
-![TreeMap compare 로직](https://i.imgur.com/YUqaO0z.png)
+![TreeMap compare 로직](/images/posts/java-treeset-comparator/TreeMap-compare-로직.png)
 
-![TreeMap 노드 저장](https://i.imgur.com/O62ljbg.png)
+![TreeMap 노드 저장](/images/posts/java-treeset-comparator/TreeMap-노드-저장.png)
 
 ## HashSet vs TreeSet
 

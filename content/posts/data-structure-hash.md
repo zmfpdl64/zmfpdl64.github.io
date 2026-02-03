@@ -12,7 +12,7 @@ description: "해시 자료구조의 원리, 충돌 회피 방법(Chaining, Open
 
 해시 자료구조는 16자리의 번호의 일부분을 index로 사용하는 자료구조입니다.
 
-![해시 테이블 구조](https://i.imgur.com/PyViybd.png)
+![해시 테이블 구조](/images/posts/data-structure-hash/해시-테이블-구조.png)
 
 ## 해시 함수란?
 
@@ -26,7 +26,7 @@ description: "해시 자료구조의 원리, 충돌 회피 방법(Chaining, Open
 
 ### 1. Chaining
 
-![Chaining 방식](https://i.imgur.com/0egbRba.png)
+![Chaining 방식](/images/posts/data-structure-hash/Chaining-방식.png)
 
 Key가 중복된 노드를 **LinkedList로 연결**하여 관리합니다. Java의 STL 자료구조는 Chaining 방식을 사용합니다.
 
@@ -34,7 +34,7 @@ Key가 중복된 노드를 **LinkedList로 연결**하여 관리합니다. Java�
 
 ### 2. Open Addressing
 
-![Open Addressing 방식](https://i.imgur.com/ZaD3M7G.png)
+![Open Addressing 방식](/images/posts/data-structure-hash/Open-Addressing-방식.png)
 
 해시 충돌이 발생하면 **다음 배열에 비어있는 곳에 저장**하는 방식입니다.
 
@@ -42,7 +42,7 @@ Key가 중복된 노드를 **LinkedList로 연결**하여 관리합니다. Java�
 
 #### Linear Probing
 
-![Linear Probing](https://i.imgur.com/yPnbejW.png)
+![Linear Probing](/images/posts/data-structure-hash/Linear-Probing.png)
 
 충돌 발생 시 오른쪽으로 **1칸씩** 이동하는 방식
 
@@ -51,7 +51,7 @@ Key가 중복된 노드를 **LinkedList로 연결**하여 관리합니다. Java�
 
 #### Quadratic Probing
 
-![Quadratic Probing](https://i.imgur.com/yq2CK5n.png)
+![Quadratic Probing](/images/posts/data-structure-hash/Quadratic-Probing.png)
 
 충돌 발생 시 오른쪽으로 **1, 4, 9... 칸씩 제곱으로** 이동하는 방식
 

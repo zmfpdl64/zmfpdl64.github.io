@@ -24,7 +24,7 @@ description: "트랜잭션, Beta Lock, Redisson 분산락의 성능 비교 테�
 
 ## 1. 트랜잭션만 사용한 결과
 
-![트랜잭션 테스트](https://i.imgur.com/bfjdGvM.png)
+![트랜잭션 테스트](/images/posts/lock-selection-performance-test/트랜잭션-테스트.png)
 
 ```java
 @Transactional
@@ -46,7 +46,7 @@ public void notUseLockTest(String lockName, Integer userId) {
 
 ## 2. Beta Lock 사용
 
-![Beta Lock 테스트](https://i.imgur.com/yaCpU4T.png)
+![Beta Lock 테스트](/images/posts/lock-selection-performance-test/Beta-Lock-테스트.png)
 
 ```java
 @Transactional
@@ -72,7 +72,7 @@ public void betaLockTest(String lockName, Integer userId) {
 
 ## 3. Redisson 분산락
 
-![Redisson 분산락 테스트](https://i.imgur.com/wxWgP5Q.png)
+![Redisson 분산락 테스트](/images/posts/lock-selection-performance-test/Redisson-분산락-테스트.png)
 
 ```java
 @DistributedLock(key = "#lockName.concat('-').concat(#userId)")

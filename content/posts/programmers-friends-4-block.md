@@ -14,7 +14,7 @@ description: "프로그래머스 프렌즈 4블록 문제를 2D 배열 시뮬레
 
 2x2 블록 안에 같은 문자열이 존재할 때 블록을 삭제하여 삭제된 모든 블록의 개수를 반환하는 문제입니다.
 
-![프렌즈 4블록 문제](https://blog.kakaocdn.net/dna/bl2pWs/btsf2oR0oEM/AAAAAAAAAAAAAAAAAAAAAGqI_ov8V1JWQ1c4a2wkiEXw2oCKyqtG-jZ8eEiUehx8/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=MwwwpsDEhMpG9CqlI4jGj7Zl2oY%3D)
+![프렌즈 4블록 문제](/images/posts/programmers-friends-4-block/프렌즈-4블록-문제.png)
 
 중학교 때 애니팡을 많이 했었는데, 이 문제를 보니까 살짝 추억이 생각나네요. 과거에 했던 게임이라 그런지 문제를 이해하는 데 크게 어려움은 없었던 문제였습니다.
 

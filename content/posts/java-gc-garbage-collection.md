@@ -37,7 +37,7 @@ description: "Java GC의 동작 원리와 다양한 GC 방식 소개"
 
 root로부터 연결되어 있다면 **reachable**, 연결되어 있지 않다면 **unreachable**
 
-![Mark And Sweep 알고리즘](https://blog.kakaocdn.net/dna/dtBO4n/btsz1fPSs1n/AAAAAAAAAAAAAAAAAAAAAARpsp2pzU_4vLR-HKWBn7m_5ot0OUyKnN1MnnFNi3K6/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=GT7sH6MmorJabPAE4ZKcSOZ2NZA%3D)
+![Mark And Sweep 알고리즘](/images/posts/java-gc-garbage-collection/Mark-And-Sweep-알고리즘.png)
 
 **단점**:
 - 의도적으로 GC를 실행시켜야 함
@@ -51,7 +51,7 @@ root로부터 연결되어 있다면 **reachable**, 연결되어 있지 않다�
 
 ## Heap 영역 구조
 
-![Heap 영역 구조](https://blog.kakaocdn.net/dna/bnabtB/btszX2X0N1G/AAAAAAAAAAAAAAAAAAAAAI6q6Ve6P7OjS7FnAS8ePjiJOFQbTeCffJSeq-fWpya2/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=1QrvX6T4Kkinby9sbHkWw55EDPA%3D)
+![Heap 영역 구조](/images/posts/java-gc-garbage-collection/Heap-영역-구조.png)
 
 ```
 Young Generation          Old Generation
@@ -96,9 +96,9 @@ Old Generation의 객체를 정리할 때 발생합니다. 프로그램을 멈�
 - Heap을 Region으로 나누어 사용
 - **Java 9부터 기본 GC 알고리즘**
 
-![G1 GC 동작 방식](https://blog.kakaocdn.net/dna/dGjOX1/btszYIkzRnB/AAAAAAAAAAAAAAAAAAAAAHsTph6BIW3gpduyKIBevXndf2Fr1-LkAFwrN0PeNBm6/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=y4m4kOqpCST2lcOEdqjEfoBKyys%3D)
+![G1 GC 동작 방식](/images/posts/java-gc-garbage-collection/G1-GC-동작-방식.png)
 
-![GC 종류 비교](https://blog.kakaocdn.net/dna/kB24v/btsz3MZ4avx/AAAAAAAAAAAAAAAAAAAAANxPq5n9rirGMBIDxlVjEmPmQVGxFLEhECIBZ0DDls-_/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=l%2FMVaxL8qwaliRd9s7CNatH9wHs%3D)
+![GC 종류 비교](/images/posts/java-gc-garbage-collection/GC-종류-비교.png)
 
 ## 참조
 

@@ -44,7 +44,7 @@ public class Stack {
 
 JDK 8버전에서는 현재 index를 변경해서 stack의 top을 관리하지만, `pop()`을 할 때 TOP의 값을 줄이기만 합니다. 이 부분에서 **메모리 누수**가 발생합니다.
 
-![Stack 메모리 누수 문제](https://i.imgur.com/y4wZGtA.png)
+![Stack 메모리 누수 문제](/images/posts/java-release-object-references/Stack-메모리-누수-문제.png)
 
 ### 참조 무효화로 해결
 
@@ -94,7 +94,7 @@ public synchronized void removeElementAt(int index) {
 
 JDK 11버전에서는 `null` 처리를 통해 객체 참조 해제를 해줘서 Stack을 사용해도 메모리 누수로부터 안전합니다.
 
-![JDK 11 Stack 구현](https://i.imgur.com/zt2FbEk.png)
+![JDK 11 Stack 구현](/images/posts/java-release-object-references/JDK-11-Stack-구현.png)
 
 ## 캐시 메모리 누수
 
@@ -114,7 +114,7 @@ Map<Object, String> map = new WeakHashMap<>();
 
 WeakHashMap을 사용하면 외부에서 해당 key 객체가 살아있는 동안만 key-value가 살아있습니다 (약한 참조). 단, key가 상수 풀에 저장되어 있으면 적용되지 않습니다 (예: primitive type).
 
-![HashMap vs WeakHashMap](https://i.imgur.com/lkvuipA.png)
+![HashMap vs WeakHashMap](/images/posts/java-release-object-references/HashMap-vs-WeakHashMap.png)
 
 ### 예시 코드
 
@@ -158,9 +158,9 @@ public static void weakHashMap() {
 
 WeakHashMap은 key를 참조 해제했을 때 key가 사라진 것을 볼 수 있으며, HashMap은 강한 결합 때문에 key를 가지고 있어 메모리 누수가 발생할 수 있습니다.
 
-![WeakHashMap 실행 결과](https://i.imgur.com/XhRTyZh.png)
+![WeakHashMap 실행 결과](/images/posts/java-release-object-references/WeakHashMap-실행-결과.png)
 
-![메모리 누수 방지 요약](https://i.imgur.com/bP5p4Mt.png)
+![메모리 누수 방지 요약](/images/posts/java-release-object-references/메모리-누수-방지-요약.png)
 
 ## 참조
 

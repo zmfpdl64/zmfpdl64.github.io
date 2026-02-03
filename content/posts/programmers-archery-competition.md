@@ -14,7 +14,7 @@ description: "프로그래머스 양궁대회 문제를 itertools.product를 활
 
 해당 문제는 라이언과 어피치가 n개의 화살을 쏴서 라이언이 가장 큰 점수 차로 이긴 배열을 반환하는 문제입니다.
 
-![양궁대회 문제](https://blog.kakaocdn.net/dna/bhjQqZ/btseGXOQtSF/AAAAAAAAAAAAAAAAAAAAACMD8U5TQAFajyugBTZ9Vdo0nudh1ImJwB1dPEO5G9vB/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=6pv1KSDStAg5kqYdqM0KBvGg8Pc%3D)
+![양궁대회 문제](/images/posts/programmers-archery-competition/양궁대회-문제.png)
 
 ## 첫 번째 조건
 

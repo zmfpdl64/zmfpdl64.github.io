@@ -82,11 +82,11 @@ return Post.fromEntity(save);
 
 문제를 확인할 때 아래와 같은 현상이 발생합니다.
 
-![save 후 null 반환 현상](https://i.imgur.com/TCyZ5kB.png)
+![save 후 null 반환 현상](/images/posts/springboot-transaction-commit/save-후-null-반환-현상.png)
 
 이 문제는 saveAndFlush() 또는 flush()를 사용하면 해결할 수 있습니다.
 
-![saveAndFlush 사용 예시](https://i.imgur.com/Vs10nVm.png)
+![saveAndFlush 사용 예시](/images/posts/springboot-transaction-commit/saveAndFlush-사용-예시.png)
 
 ## 결론
 

@@ -77,7 +77,7 @@ public Response<Page<CommentResponse>> getMyComments(Authentication authenticati
 
 이 클래스의 `@WithSecurityContext`를 통해 `WithMockUserSecurityContextFactory.class` 클래스를 이용해 인증 설정을 하는 것을 확인할 수 있습니다.
 
-![WithMockUser 어노테이션 클래스](https://blog.kakaocdn.net/dna/uQ4YI/btsdzhnvBbK/AAAAAAAAAAAAAAAAAAAAAJkesdzY0C1tv_HrtRjTe1_x37ncrsW0eI3Qi6BZ2urc/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=vAAoI%2FX%2F7zUSKOCviz7jyc%2FZEJg%3D)
+![WithMockUser 어노테이션 클래스](/images/posts/springboot-withmockuser-null/WithMockUser-어노테이션-클래스.png)
 
 ### WithMockUserSecurityContextFactory.class 확인
 
@@ -126,7 +126,7 @@ final class WithMockUserSecurityContextFactory implements WithSecurityContextFac
 
 제가 사용하고 있는 객체 클래스는 `Member.class`이지만 `@WithMockUser`에서 사용하고 있는 클래스는 `User.class`였습니다.
 
-![User 클래스와 Member 클래스 차이](https://blog.kakaocdn.net/dna/bDFYnl/btsdBOSS5LU/AAAAAAAAAAAAAAAAAAAAAG5YaoJZlUeJFPpvv82jgvNYavu4jAF48q9qr2iq88T-/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=Dda8mL5yV22kdX3mXzyBI38wWQY%3D)
+![User 클래스와 Member 클래스 차이](/images/posts/springboot-withmockuser-null/User-클래스와-Member-클래스-차이.png)
 
 ## 해결 방법
 
@@ -194,7 +194,7 @@ void 내_댓글_조회_성공() throws Exception {
 
 성공적으로 테스트 코드가 통과하는 것을 확인할 수 있습니다.
 
-![최종 테스트 성공](https://blog.kakaocdn.net/dna/tNMgl/btsdBeKSPVz/AAAAAAAAAAAAAAAAAAAAANEczJOlwqKahjLo-4Oq-asDRGhtWzN3-Lu-2yFdrjd_/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=utuzYdx2bfxgykT49JNF0SZGiVc%3D)
+![최종 테스트 성공](/images/posts/springboot-withmockuser-null/최종-테스트-성공.png)
 
 ### WithMockCustomAnonymouseSecurityContextFactory
 

@@ -14,7 +14,7 @@ description: "이펙티브 자바 - 정적 팩토리 메소드의 장점과 활�
 
 오늘 이펙티브 자바를 읽으면서 정적 팩토리의 장점에 대해서 읽는데 뭔가 체감이 되지 않았습니다. 그래서 책에서 말하는 장점 코드에 대해서 작성해보고 설명해보는 시간을 가지려고 합니다.
 
-![정적 팩토리 메소드](https://blog.kakaocdn.net/dna/FnnUR/btsmHFz7XFG/AAAAAAAAAAAAAAAAAAAAAKxrsd6R5gPBHgx4xzxSGkzxOWnOMWCetxsv2tidIZ9o/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=i5xSf%2FpsPsDSLTfqcdV0IUZd9yI%3D)
+![정적 팩토리 메소드](/images/posts/java-static-factory-method/정적-팩토리-메소드.jpg)
 
 ## 정적 팩토리 메소드의 장점
 

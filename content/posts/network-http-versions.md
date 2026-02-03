@@ -14,7 +14,7 @@ HTTP(Hyper Text Transfer Protocol)는 7계층을 대표하는 프로토콜로 �
 
 ## HTTP/1.0
 
-![HTTP/1.0 연결 방식](https://blog.kakaocdn.net/dna/d9tFwq/btszLYlWNjA/AAAAAAAAAAAAAAAAAAAAAGJJZn0mkFsfqnvl2Oj3usNzWmRGPUPJ_5lxxpzqK-5R/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=ZdQ2g7Y%2BX3pf68%2BLbmYiTuAb6Rk%3D)
+![HTTP/1.0 연결 방식](/images/posts/network-http-versions/HTTP10-연결-방식.png)
 
 HTTP/1.0은 기본적으로 **한 연결당 하나의 요청**을 처리하도록 설계되었습니다. 이는 RTT 증가를 불러옵니다.
 
@@ -48,13 +48,13 @@ HTTP/1.0은 기본적으로 **한 연결당 하나의 요청**을 처리하도�
 
 ## HTTP/1.1
 
-![HTTP/1.1 keep-alive](https://blog.kakaocdn.net/dna/ZFsX6/btszKy2RKN2/AAAAAAAAAAAAAAAAAAAAAAB6ja8IzY-bjvMbyqVvPhD19ik8dWQDOWgUqXaabSJK/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=JsGwMtN3wSOoWT7lTR8eGnJizgg%3D)
+![HTTP/1.1 keep-alive](/images/posts/network-http-versions/HTTP11-keep-alive.png)
 
 HTTP/1.0에서 발전한 것이 HTTP/1.1입니다. 매번 TCP 연결을 하는 것이 아니라 한 번 TCP 초기화를 한 이후에 **keep-alive**라는 옵션으로 여러 개의 파일을 송수신할 수 있게 바뀌었습니다.
 
 ### HOL Blocking (Head Of Line Blocking)
 
-![HOL Blocking](https://blog.kakaocdn.net/dna/ninGy/btszHGAtrs5/AAAAAAAAAAAAAAAAAAAAAJ8ZTNRH17-4Tad0bNKVUQksmEhxNO-K9W40LA2SuWNz/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=BqTfxNl2eL0sMAKQtDy1BQiSAj4%3D)
+![HOL Blocking](/images/posts/network-http-versions/HOL-Blocking.png)
 
 네트워크에서 같은 큐에 있는 패킷이 그 첫 번째 패킷에 의해 지연될 때 발생하는 성능 저하 현상을 말합니다. 동기 블로킹 방식으로 하나의 작업이 끝나야만 다음 작업이 실행됩니다.
 
@@ -64,7 +64,7 @@ HTTP/1.1의 헤더에는 쿠키 등 많은 메타데이터가 들어 있고 압�
 
 ## HTTP/2
 
-![HTTP/2 특징](https://blog.kakaocdn.net/dna/bhMm5v/btszLsgqmZx/AAAAAAAAAAAAAAAAAAAAAEspuo9YqenI2fc4ZW0cPRxOWU1ncEgarO7eWVyNnX8E/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=sT6onBegDN4pWOSM5ET0ud18mg8%3D)
+![HTTP/2 특징](/images/posts/network-http-versions/HTTP2-특징.png)
 
 HTTP/2는 SPDY 프로토콜에서 파생된 HTTP/1.x보다 지연 시간을 줄이고 응답 시간을 더 빠르게 할 수 있습니다.
 
@@ -77,7 +77,7 @@ HTTP/2는 SPDY 프로토콜에서 파생된 HTTP/1.x보다 지연 시간을 줄�
 
 ### 멀티플렉싱
 
-![멀티플렉싱](https://blog.kakaocdn.net/dna/dvWyd8/btszK1J8FVw/AAAAAAAAAAAAAAAAAAAAAGo-gA0ZtY1cWhuPpVwCSDFv56NadiNOarjsYLwRrTGP/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=3My2%2F%2F40oRVJ0yjTnGSOBPDfgkw%3D)
+![멀티플렉싱](/images/posts/network-http-versions/멀티플렉싱.png)
 
 여러 개의 스트림을 사용하여 송수신합니다. 특정 스트림의 패킷이 손실되었다고 하더라도 해당 스트림에만 영향을 미치고 나머지 스트림은 멀쩡하게 동작할 수 있습니다.
 
@@ -87,7 +87,7 @@ HTTP/2는 SPDY 프로토콜에서 파생된 HTTP/1.x보다 지연 시간을 줄�
 
 ### 헤더 압축
 
-![헤더 압축](https://blog.kakaocdn.net/dna/cj4g08/btszH5Nxhwv/AAAAAAAAAAAAAAAAAAAAAHYWudZOxIE0T0qBeW0uZcPpiWNgYYmxlO5EqIZKupdE/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=u8Zgcbb7Z4vw5SVpOFBf7%2Fm0kno%3D)
+![헤더 압축](/images/posts/network-http-versions/헤더-압축.png)
 
 HTTP/1.x에는 크기가 큰 헤더라는 문제가 있었습니다. HTTP/2에서는 **허프만 코딩**을 사용하여 헤더를 압축합니다.
 
@@ -95,7 +95,7 @@ HTTP/1.x에는 크기가 큰 헤더라는 문제가 있었습니다. HTTP/2에�
 
 ### 서버 푸시
 
-![서버 푸시](https://blog.kakaocdn.net/dna/pIlN0/btszH6eGD3e/AAAAAAAAAAAAAAAAAAAAAIuBIzVMXfkeJ_HKNCmojgZn4HRMchUWcotnW4tfYZoM/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=YsKjOnHM7p5OX5q%2FBNIWzb27qvE%3D)
+![서버 푸시](/images/posts/network-http-versions/서버-푸시.png)
 
 HTTP/1.1에서는 클라이언트가 서버에 요청을 해야 파일을 다운로드받을 수 있었다면, HTTP/2는 **클라이언트 요청 없이 서버가 바로 리소스를 푸시**할 수 있습니다.
 

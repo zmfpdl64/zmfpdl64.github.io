@@ -71,7 +71,7 @@ public class RedisConfig {
 
 redisConnectionFactory는 스프링과 Redis가 동작할 수 있게 연결해주는 설정들입니다.
 
-![Redis Configuration](https://blog.kakaocdn.net/dna/qb81p/btsdgUfS5BF/AAAAAAAAAAAAAAAAAAAAAEFL6nrmN6tY9cPxBz3C2G4W2DGfkFX99PYHtpqBZL8H/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=iaCLiwlFWFiCBkkQ%2FZUxmKsiHnc%3D)
+![Redis Configuration](/images/posts/springboot-redis-caching/Redis-Configuration.png)
 
 ### Member Cache DAO 생성하기
 
@@ -101,7 +101,7 @@ public class MemberCacheRepository {
 
 Redis에서 getMember 메소드와 setMember 메소드를 만들었습니다.
 
-![Member Cache DAO](https://blog.kakaocdn.net/dna/LdwZ3/btsdlKDIIND/AAAAAAAAAAAAAAAAAAAAAL34zlo40bsouINjk0ioqx_4SunAdleg2b38mvqmH2Y-/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=xuy2BoYQJMgMWJFYWdmbHZu71lc%3D)
+![Member Cache DAO](/images/posts/springboot-redis-caching/Member-Cache-DAO.png)
 
 ### Member 서비스단에서 Caching OR DB조회
 

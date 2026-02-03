@@ -18,9 +18,9 @@ AOP를 이용해 다양한 곳에서 유연하고 범용성 있게 사용하기 
 
 원하는 출력 값은 `lockName`과 `userId`의 값이었지만, 예상했던 것과는 다르게 `arg0`, `arg1`과 같은 변수명을 가져왔습니다.
 
-![원하는 출력 vs 실제 출력](https://i.imgur.com/dYhqEWd.png)
+![원하는 출력 vs 실제 출력](/images/posts/java-reflection-parameter-names/원하는-출력-vs-실제-출력.png)
 
-![arg0, arg1 반환](https://i.imgur.com/i8Z6zVF.png)
+![arg0, arg1 반환](/images/posts/java-reflection-parameter-names/arg0-arg1-반환.png)
 
 ## Parameter.getName() 분석
 
@@ -28,7 +28,7 @@ AOP를 이용해 다양한 곳에서 유연하고 범용성 있게 사용하기 
 
 `Method` 클래스는 `Executable` 클래스를 상속하고 있고 `getParameters`는 `Executable` 클래스에서 구현되어 있었습니다.
 
-![클래스 구조도](https://i.imgur.com/4JnZV7B.png)
+![클래스 구조도](/images/posts/java-reflection-parameter-names/클래스-구조도.png)
 
 ### Executable 클래스 분석
 
@@ -36,19 +36,19 @@ AOP를 이용해 다양한 곳에서 유연하고 범용성 있게 사용하기 
 
 `getParameters()` 메소드에서 시작해서 내부 구현을 추적했습니다.
 
-![getParameters 메소드](https://i.imgur.com/IgxK6HV.png)
+![getParameters 메소드](/images/posts/java-reflection-parameter-names/getParameters-메소드.png)
 
 #### privateGetParameters 메소드
 
 `tmp`가 초기화되는 로직은 이 로직에서만 이루어집니다. 그래서 처음에는 `synthesizeAllParams()` 메소드를 타게 됩니다.
 
-![privateGetParameters 메소드](https://i.imgur.com/5l7sSXx.png)
+![privateGetParameters 메소드](/images/posts/java-reflection-parameter-names/privateGetParameters-메소드.png)
 
 #### synthesizeAllParams 메소드
 
 이전에 `parameters`를 초기화해주는 곳이 없어서 발생하는 문제입니다. 무조건 `synthesizeAllParams()` 메소드를 통해 `arg0`, `arg1`로 초기화되는 것입니다.
 
-![synthesizeAllParams 메소드](https://i.imgur.com/PYYR16j.png)
+![synthesizeAllParams 메소드](/images/posts/java-reflection-parameter-names/synthesizeAllParams-메소드.png)
 
 ## 해결 방법
 
@@ -60,7 +60,7 @@ IntelliJ로 실행을 한다면:
 1. **설정** → **빌드, 실행, 배포** → **컴파일러** → **Java 컴파일러**
 2. **추가 매개변수**에 `-parameters` 추가
 
-![IntelliJ 설정](https://i.imgur.com/zdH3two.png)
+![IntelliJ 설정](/images/posts/java-reflection-parameter-names/IntelliJ-설정.png)
 
 ### Gradle 컴파일 옵션 추가
 
@@ -72,7 +72,7 @@ tasks.withType(JavaCompile) {
 }
 ```
 
-![Gradle 설정](https://i.imgur.com/e0SK9S2.png)
+![Gradle 설정](/images/posts/java-reflection-parameter-names/Gradle-설정.png)
 
 ## 결론
 

@@ -18,7 +18,7 @@ description: "프로그래머스 택배상자 문제를 스택 자료구조로 �
 
 메인 컨테이너 벨트를 타고 상자들이 순서대로 전달됩니다. 이 상자들을 서브 컨테이너 벨트를 사용하여 트럭에 전달하는 문제입니다.
 
-![택배상자 문제](https://blog.kakaocdn.net/dna/Nz907/btslRmgNLOO/AAAAAAAAAAAAAAAAAAAAAOEHKhjSpz_inYCt2X-toQd6RkVw-EU-tA4A_FOcas55/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=n%2B1C%2BlkJbs9ovFd96aOYRlwmUK8%3D)
+![택배상자 문제](/images/posts/programmers-parcel-box/택배상자-문제.png)
 
 - 메인 컨테이너 벨트로 상자들이 1, 2, 3, 4, 5 순서로 전달됩니다
 - 트럭에서 상자를 쌓고 싶은 순서는 다릅니다

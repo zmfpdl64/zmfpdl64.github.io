@@ -18,7 +18,7 @@ description: "프로그래머스 길 찾기 게임 문제를 이진 트리 자�
 
 x, y 좌표로 이루어진 이진 트리의 맵에서 전위 순회, 후위 순회 방식으로 순회한 노드의 번호들을 반환하는 문제입니다.
 
-![길 찾기 게임 문제](https://blog.kakaocdn.net/dna/b6B2J9/btsfe7qisKE/AAAAAAAAAAAAAAAAAAAAAJxJwMylcBU182-Xm8VDJwhzajFFPpnQ-n3WEEieO79L/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=uiVJGKaISMgVqwt7ou3bD%2BReJlA%3D)
+![길 찾기 게임 문제](/images/posts/programmers-find-path-game/길-찾기-게임-문제.jpg)
 
 ## 문제 해결 방법
 
@@ -46,7 +46,7 @@ class Node:
 
 노드 추가 방식은 양방향 링크드 리스트와 유사하게 작성했습니다.
 
-![노드 삽입 방식](https://blog.kakaocdn.net/dna/bgI0Xf/btsffvSeeBH/AAAAAAAAAAAAAAAAAAAAAKXRmmWp9RQjhjqjACLPi09tvGiJ0_yeVRzoN2qfAoh6/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=XmAt%2B374ldbCmeSUu8hEzhy3CVs%3D)
+![노드 삽입 방식](/images/posts/programmers-find-path-game/노드-삽입-방식.jpg)
 
 1번, 2번이 연결되어 있는 상태에서 3번 노드가 추가되면:
 - 3번 노드의 부모 노드와 1번 LEFT(자식 노드)를 연결시키고 기존의 연결은 끊어줍니다
@@ -144,9 +144,9 @@ def solution(nodeinfo):
 
 노드를 삽입할 때 기존 자식 노드의 x값을 비교해서 적절한 위치에 재배치해야 합니다.
 
-![부모 노드 교체](https://blog.kakaocdn.net/dna/bkMfuV/btsfdrCP8KO/AAAAAAAAAAAAAAAAAAAAAGDp7VSyBC7NI4ydtpxUZaGcEIdKnKddgbp4SkTwc3C6/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=Qstk%2FuiSe76YAkyg6EKtlqTztxQ%3D)
+![부모 노드 교체](/images/posts/programmers-find-path-game/부모-노드-교체.jpg)
 
-![자식 노드 재배치](https://blog.kakaocdn.net/dna/bmCzil/btsfdcy8aPd/AAAAAAAAAAAAAAAAAAAAAIM27-aTdhiN9Wt5K-YvYNYnTH2_aF5aVk-9tMXH_zEx/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1772290799&allow_ip=&allow_referer=&signature=FuV3rQNcuEkXY8eGNtDSi%2FeS6kI%3D)
+![자식 노드 재배치](/images/posts/programmers-find-path-game/자식-노드-재배치.jpg)
 
 ## 핵심 포인트
 
