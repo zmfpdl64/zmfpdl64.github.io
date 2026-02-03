@@ -4,7 +4,6 @@
 문제 상황 원하는 출력 값은 lockName과 userId의 값이었지만, 예상했던 것과는 다르게 arg0, arg1과 같은 변수명을 가져왔습니다.
 Parameter.getName() 분석 클래스 구조도 Method 클래스는 Executable 클래스를 상속하고 있고 getParameters는 Executable 클래스에서 구현되어 있었습니다.
 Executable 클래스 분석 getParameters 메소드 (시작) getParameters() 메소드에서 시작해서 내부 구현을 추적했습니다.
-privateGetParameters 메소드 tmp가 초기화되는 로직은 이 로직에서만 이루어집니다. 그래서 처음에는 synthesizeAllParams() 메소드를 타게 됩니다.
 ...</p></div><footer class=entry-footer><span title='2024-04-28 00:33:43 +0900 KST'>April 28, 2024</span>&nbsp;·&nbsp;<span>Lee WooJin</span></footer><a class=entry-link aria-label="post link to Reflection 메소드 매개변수 필드명이 arg0, arg1로 나오는 문제 해결" href=https://zmfpdl64.github.io/posts/java-reflection-parameter-names/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>TreeSet의 구조와 Comparator 주의사항</h2></header><div class=entry-content><p>TreeSet 구조 TreeSet은 필드로 NavigableMap 인터페이스를 가지고 있으며, TreeMap 클래스가 해당 인터페이스를 구현하는 구조를 가지고 있습니다.
 TreeSet 생성자가 호출되면 m 필드에 TreeMap 클래스가 할당됩니다.
 문제점 발견 TreeSet을 사용하면서 예상한 결과값과 다르게 결과가 나와서 원인을 찾아보기로 했습니다.
