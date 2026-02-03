@@ -657,3 +657,1065 @@ pre code {
     visibility: visible !important;
     opacity: 1 !important;
 }
+
+/* ===================================
+   Portfolio 페이지 스타일
+   =================================== */
+
+.portfolio-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Hero 섹션 */
+.portfolio-hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-gray-100) 100%);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.portfolio-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-900);
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-hero .subtitle {
+    font-size: 1.1rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.portfolio-hero .description {
+    font-size: 1rem;
+    color: var(--text-500);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text-700);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+}
+
+.hero-btn.primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.hero-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.hero-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Tech Stack 그리드 */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.tech-category {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.tech-category h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-700);
+    margin-bottom: 1rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: var(--bg-gray-100);
+    color: var(--text-700);
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.tech-tag.java {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.tech-tag.python {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.tech-tag.spring {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.tech-tag.fastapi {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.tech-tag.redis {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.tech-tag.kafka {
+    background: #f3e8ff;
+    color: #6b21a8;
+}
+
+.tech-tag.mysql {
+    background: #cffafe;
+    color: #0e7490;
+}
+
+.tech-tag.react {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.tech-tag.js {
+    background: #fef9c3;
+    color: #a16207;
+}
+
+.tech-tag.docker {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.tech-tag.aws {
+    background: #ffedd5;
+    color: #c2410c;
+}
+
+/* 자격증 그리드 */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    border-color: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+}
+
+.cert-icon {
+    font-size: 2rem;
+}
+
+.cert-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-900);
+    margin-bottom: 0.25rem;
+}
+
+.cert-info p {
+    font-size: 0.85rem;
+    color: var(--text-500);
+}
+
+/* 프로젝트 그리드 */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.project-card {
+    display: block;
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: var(--primary-light);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(79, 70, 229, 0.12);
+}
+
+.project-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-900);
+    margin-bottom: 0.5rem;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    color: var(--text-500);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-tech span {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--primary);
+    background: rgba(79, 70, 229, 0.08);
+    border-radius: 12px;
+}
+
+.project-live {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+/* Access 섹션 */
+.access-section {
+    margin: 2rem 0;
+}
+
+.access-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.access-card p {
+    color: var(--text-500);
+    margin-bottom: 1.5rem;
+}
+
+.access-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.access-form input {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 200px;
+    background: var(--bg-white);
+    color: var(--text-700);
+}
+
+.access-form input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.access-btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.access-btn:hover {
+    background: var(--primary-dark);
+}
+
+.access-hint {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+/* Currently 리스트 */
+.currently-list {
+    list-style: none;
+    padding: 0;
+}
+
+.currently-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-700);
+}
+
+.currently-list li:last-child {
+    border-bottom: none;
+}
+
+/* Study 그리드 */
+.study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+}
+
+.study-card {
+    display: block;
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.study-card:hover {
+    border-color: var(--primary-light);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(79, 70, 229, 0.12);
+}
+
+.study-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.study-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-900);
+    margin-bottom: 0.5rem;
+}
+
+.study-card p {
+    font-size: 0.85rem;
+    color: var(--text-500);
+}
+
+/* ===================================
+   Archives 페이지 스타일
+   =================================== */
+
+/* About Me / Profile 섹션 */
+.archive-portfolio {
+    margin-bottom: 3rem;
+}
+
+.archive-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-900);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.archive-profile {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-900);
+    margin-bottom: 0.5rem;
+}
+
+.profile-role {
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.profile-desc {
+    font-size: 0.95rem;
+    color: var(--text-500);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.profile-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.profile-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--primary);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.profile-links a:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* 뱃지 그룹 */
+.profile-badges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.badge-group {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+.badge-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-700);
+    margin-bottom: 0.75rem;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.badge.cert {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.badge.award {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge.edu {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+/* 타임라인 탭 */
+.archive-timeline-tabs {
+    margin-top: 2rem;
+}
+
+.timeline-tab-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.25rem;
+    background: var(--bg-gray-100);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-500);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background: var(--bg-white);
+    border-color: var(--primary-light);
+    color: var(--primary);
+}
+
+.tab-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.timeline-tab-content {
+    display: none;
+}
+
+.timeline-tab-content.active {
+    display: block;
+}
+
+/* 통합 타임라인 */
+.unified-timeline {
+    position: relative;
+}
+
+.timeline-year {
+    margin-bottom: 2.5rem;
+}
+
+.timeline-year-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.1) 0%, transparent 100%);
+    border-left: 4px solid var(--primary);
+    border-radius: 0 8px 8px 0;
+}
+
+.timeline-events {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-events::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline-event {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.event-dot {
+    position: absolute;
+    left: -2rem;
+    top: 0.25rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--border);
+    border: 3px solid var(--bg-white);
+    z-index: 1;
+}
+
+/* 이벤트 타입별 색상 */
+.timeline-event.work .event-dot {
+    background: #3b82f6;
+}
+
+.timeline-event.cert .event-dot {
+    background: #10b981;
+}
+
+.timeline-event.project .event-dot {
+    background: #8b5cf6;
+}
+
+.timeline-event.award .event-dot {
+    background: #f59e0b;
+}
+
+.timeline-event.education .event-dot {
+    background: #ec4899;
+}
+
+.timeline-event.blog .event-dot {
+    background: #6366f1;
+}
+
+.event-content {
+    flex: 1;
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.2s ease;
+}
+
+.event-content:hover {
+    border-color: var(--primary-light);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+}
+
+.event-date {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-400);
+    margin-bottom: 0.5rem;
+}
+
+.event-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-900);
+    margin-bottom: 0.25rem;
+}
+
+.event-content h4 a {
+    color: var(--text-900);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.event-content h4 a:hover {
+    color: var(--primary);
+}
+
+.event-content p {
+    font-size: 0.9rem;
+    color: var(--text-500);
+    line-height: 1.5;
+}
+
+/* 커리어 섹션 (탭 2) */
+.career-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.career-section {
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.career-section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-900);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.career-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.career-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.career-item:hover {
+    background: var(--bg-gray-50);
+}
+
+.career-date {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-400);
+    white-space: nowrap;
+    min-width: 100px;
+}
+
+.career-info h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-900);
+    margin-bottom: 0.25rem;
+}
+
+.career-info p {
+    font-size: 0.85rem;
+    color: var(--text-500);
+}
+
+/* 커리어 아이템 타입별 왼쪽 보더 색상 */
+.career-item.education {
+    border-left: 3px solid #ec4899;
+}
+
+.career-item.cert {
+    border-left: 3px solid #10b981;
+}
+
+.career-item.award {
+    border-left: 3px solid #f59e0b;
+}
+
+.career-item.project {
+    border-left: 3px solid #8b5cf6;
+}
+
+/* ===================================
+   다크 모드 - Portfolio & Archives
+   =================================== */
+
+[data-theme="dark"] .portfolio-hero {
+    background: linear-gradient(135deg, #172038 0%, #243154 100%);
+    border-color: #3d4f7a;
+}
+
+[data-theme="dark"] .portfolio-hero h1 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .portfolio-hero .subtitle {
+    color: #818cf8;
+}
+
+[data-theme="dark"] .portfolio-hero .description {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .hero-btn {
+    background: #243154;
+    border-color: #3d4f7a;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .hero-btn:hover {
+    border-color: #818cf8;
+    color: #818cf8;
+}
+
+[data-theme="dark"] .hero-btn.primary {
+    background: #818cf8;
+    border-color: #818cf8;
+    color: white;
+}
+
+[data-theme="dark"] .tech-category,
+[data-theme="dark"] .cert-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .access-card,
+[data-theme="dark"] .study-card {
+    background: #243154;
+    border-color: #3d4f7a;
+}
+
+[data-theme="dark"] .tech-category:hover,
+[data-theme="dark"] .cert-card:hover,
+[data-theme="dark"] .project-card:hover,
+[data-theme="dark"] .study-card:hover {
+    border-color: #818cf8;
+}
+
+[data-theme="dark"] .tech-category h3,
+[data-theme="dark"] .cert-info h4,
+[data-theme="dark"] .project-card h3,
+[data-theme="dark"] .study-card h3 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .tech-tag {
+    background: #3d4f7a;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .project-tech span {
+    background: #2d3a5c;
+    color: #818cf8;
+}
+
+[data-theme="dark"] .access-form input {
+    background: #243154;
+    border-color: #3d4f7a;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .access-form input:focus {
+    border-color: #818cf8;
+}
+
+[data-theme="dark"] .access-btn {
+    background: #818cf8;
+}
+
+[data-theme="dark"] .access-btn:hover {
+    background: #6366f1;
+}
+
+[data-theme="dark"] .currently-list li {
+    border-bottom-color: #3d4f7a;
+    color: #cbd5e1;
+}
+
+/* Archives 다크 모드 */
+[data-theme="dark"] .archive-section-title {
+    color: #f1f5f9;
+    border-bottom-color: #3d4f7a;
+}
+
+[data-theme="dark"] .archive-profile,
+[data-theme="dark"] .badge-group,
+[data-theme="dark"] .event-content,
+[data-theme="dark"] .career-section {
+    background: #243154;
+    border-color: #3d4f7a;
+}
+
+[data-theme="dark"] .profile-info h3,
+[data-theme="dark"] .event-content h4,
+[data-theme="dark"] .career-info h4 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .profile-role {
+    color: #818cf8;
+}
+
+[data-theme="dark"] .profile-desc,
+[data-theme="dark"] .event-content p,
+[data-theme="dark"] .career-info p {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .profile-links a {
+    background: #2d3a5c;
+    color: #818cf8;
+}
+
+[data-theme="dark"] .profile-links a:hover {
+    background: #818cf8;
+    color: white;
+}
+
+[data-theme="dark"] .badge.cert {
+    background: #1e3a5f;
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .badge.award {
+    background: #451a03;
+    color: #fbbf24;
+}
+
+[data-theme="dark"] .badge.edu {
+    background: #064e3b;
+    color: #34d399;
+}
+
+[data-theme="dark"] .tab-btn {
+    background: #2d3a5c;
+    border-color: #3d4f7a;
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .tab-btn:hover {
+    background: #243154;
+    border-color: #818cf8;
+    color: #818cf8;
+}
+
+[data-theme="dark"] .tab-btn.active {
+    background: #818cf8;
+    border-color: #818cf8;
+    color: white;
+}
+
+[data-theme="dark"] .timeline-tab-buttons {
+    border-bottom-color: #3d4f7a;
+}
+
+[data-theme="dark"] .timeline-year-header {
+    color: #818cf8;
+    background: linear-gradient(90deg, rgba(129, 140, 248, 0.15) 0%, transparent 100%);
+    border-left-color: #818cf8;
+}
+
+[data-theme="dark"] .timeline-events::before {
+    background: #3d4f7a;
+}
+
+[data-theme="dark"] .event-dot {
+    border-color: #1e2a4a;
+}
+
+[data-theme="dark"] .event-content:hover {
+    border-color: #818cf8;
+}
+
+[data-theme="dark"] .event-date,
+[data-theme="dark"] .career-date {
+    color: #64748b;
+}
+
+[data-theme="dark"] .event-content h4 a {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .event-content h4 a:hover {
+    color: #818cf8;
+}
+
+[data-theme="dark"] .career-section-title {
+    color: #f1f5f9;
+    border-bottom-color: #3d4f7a;
+}
+
+[data-theme="dark"] .career-item:hover {
+    background: #2d3a5c;
+}
+
+/* ===================================
+   반응형 디자인
+   =================================== */
+
+@media (max-width: 768px) {
+    .portfolio-hero {
+        padding: 2rem 1.5rem;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+
+    .tech-grid,
+    .cert-grid,
+    .project-grid,
+    .study-grid,
+    .profile-badges,
+    .career-sections {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-tab-buttons {
+        justify-content: flex-start;
+        padding-right: 1rem;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .timeline-events {
+        padding-left: 1.5rem;
+    }
+
+    .event-dot {
+        left: -1.5rem;
+        width: 12px;
+        height: 12px;
+    }
+
+    .event-content {
+        padding: 1rem;
+    }
+
+    .career-date {
+        min-width: 80px;
+        font-size: 0.75rem;
+    }
+
+    .access-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .access-form input {
+        width: 100%;
+        max-width: 250px;
+    }
+}
