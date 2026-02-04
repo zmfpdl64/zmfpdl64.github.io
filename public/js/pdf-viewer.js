@@ -75,7 +75,8 @@ function renderPage(num) {
     const scale = Math.min(scaleWidth, scaleHeight, 2); // 최대 2배
 
     // 고해상도 디스플레이 지원 (모바일 화질 개선)
-    const pixelRatio = window.devicePixelRatio || 1;
+    // 최소 3배 해상도로 렌더링하여 선명도 향상
+    const pixelRatio = Math.max(window.devicePixelRatio || 1, 3);
     const viewport = page.getViewport({ scale: scale * pixelRatio });
     console.log('Viewport 크기:', viewport.width, viewport.height, 'pixelRatio:', pixelRatio);
 
