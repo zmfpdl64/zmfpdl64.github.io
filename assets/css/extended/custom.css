@@ -1719,3 +1719,63 @@ pre code {
         max-width: 250px;
     }
 }
+
+/* PDF 뷰어 모달 스타일 */
+.pdf-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(2,6,23,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+}
+.pdf-modal-content {
+    width: min(1100px, 95%);
+    background: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+.pdf-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+.pdf-header h3 { margin: 0; font-size: 1.05rem; }
+.pdf-close {
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+}
+.pdf-viewer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.pdf-nav {
+    background: rgba(15,23,42,0.06);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+.pdf-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem 1rem;
+    color: var(--text-500);
+}
+.pdf-hint { font-size: 0.85rem; margin: 0; }
+
+.document-card { cursor: pointer; display:flex; gap:1rem; align-items:center; padding:1rem; border:1px solid var(--border); border-radius:12px; transition:all .15s ease; }
+.document-card:hover { transform:translateY(-4px); box-shadow:0 10px 30px rgba(15,23,42,0.06); border-color:var(--primary-light); }
+.document-card .cert-icon { font-size:2rem }
