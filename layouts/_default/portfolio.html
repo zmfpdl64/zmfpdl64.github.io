@@ -320,9 +320,10 @@
     const hash = await sha256(input);
     const decrypted = await decryptContent(ENCRYPTED_CONTENT, input);
     if (decrypted) {
+      localStorage.setItem("pf-password", input);
       showPrivateContent(decrypted);
     } else {
-      localStorage.setItem("pf-password", input);
+      localStorage.removeItem("pf-password");
       document.getElementById("access-error").style.display = "block";
       document.getElementById("access-code").value = "";
     }
