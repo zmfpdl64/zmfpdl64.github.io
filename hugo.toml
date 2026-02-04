@@ -19,8 +19,8 @@ buildExpired = false
   env = "production"
   author = "Lee WooJin"
   description = "꾸준히 성장하는 개발자 이우진의 기술 블로그입니다."
-  # Analytics API 엔드포인트 (배포 후 실제 URL로 변경)
-  analyticsEndpoint = "https://your-api-server.com/events"
+  # Analytics API 엔드포인트
+  analyticsEndpoint = "https://blog-analytics-proxy.zmfpdl64.workers.dev/events"
 
   [params.assets]
     disableFingerprinting = true

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>컴파일러 on Lee WooJin | Developer</title>
-    <link>https://zmfpdl64.github.io/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC/</link>
+    <link>http://localhost:1313/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC/</link>
     <description>Recent content in 컴파일러 on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 28 Apr 2024 00:33:43 +0900</lastBuildDate>
-    <atom:link href="https://zmfpdl64.github.io/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reflection 메소드 매개변수 필드명이 arg0, arg1로 나오는 문제 해결</title>
-      <link>https://zmfpdl64.github.io/posts/java-reflection-parameter-names/</link>
+      <link>http://localhost:1313/posts/java-reflection-parameter-names/</link>
       <pubDate>Sun, 28 Apr 2024 00:33:43 +0900</pubDate>
-      <guid>https://zmfpdl64.github.io/posts/java-reflection-parameter-names/</guid>
+      <guid>http://localhost:1313/posts/java-reflection-parameter-names/</guid>
       <description>Java Reflection에서 메소드 매개변수 이름이 arg0, arg1로 나오는 원인과 해결 방법</description>
     </item>
   </channel>
