@@ -13,6 +13,15 @@ pdfjsLib.GlobalWorkerOptions.workerSrc =
 // PDF 뷰어 열기
 function openPdfViewer(pdfUrl, title) {
   console.log("PDF 뷰어 열기:", pdfUrl, title);
+
+  // Analytics: pdf_view 이벤트
+  if (window.WA) {
+    window.WA.track('pdf_view', {
+      pdf_url: pdfUrl,
+      pdf_title: title
+    });
+  }
+
   const modal = document.getElementById("pdf-modal");
   if (!modal) {
     console.error("pdf-modal 요소를 찾을 수 없습니다");
@@ -154,6 +163,7 @@ function queueRenderPage(num) {
 function prevPage() {
   if (pageNum <= 1) return;
   pageNum--;
+  trackPageChange();
   queueRenderPage(pageNum);
 }
 
@@ -161,7 +171,20 @@ function prevPage() {
 function nextPage() {
   if (!pdfDoc || pageNum >= pdfDoc.numPages) return;
   pageNum++;
+  trackPageChange();
   queueRenderPage(pageNum);
+}
+
+// Analytics: 페이지 변경 이벤트
+function trackPageChange() {
+  if (window.WA) {
+    const title = document.getElementById('pdf-title')?.textContent;
+    window.WA.track('pdf_page_change', {
+      page: pageNum,
+      total_pages: pdfDoc ? pdfDoc.numPages : null,
+      pdf_title: title
+    });
+  }
 }
 
 // 뷰어 닫기

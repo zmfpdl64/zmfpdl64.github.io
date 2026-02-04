@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Proxy on Lee WooJin | Developer</title>
-    <link>https://zmfpdl64.github.io/tags/proxy/</link>
+    <link>http://localhost:1313/tags/proxy/</link>
     <description>Recent content in Proxy on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Tue, 28 Nov 2023 15:38:26 +0900</lastBuildDate>
-    <atom:link href="https://zmfpdl64.github.io/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java 동적 프록시 (Dynamic Proxy) 이해하기</title>
-      <link>https://zmfpdl64.github.io/posts/java-dynamic-proxy/</link>
+      <link>http://localhost:1313/posts/java-dynamic-proxy/</link>
       <pubDate>Tue, 28 Nov 2023 15:38:26 +0900</pubDate>
-      <guid>https://zmfpdl64.github.io/posts/java-dynamic-proxy/</guid>
+      <guid>http://localhost:1313/posts/java-dynamic-proxy/</guid>
       <description>Java에서 동적 프록시를 사용하는 방법과 한계점</description>
     </item>
   </channel>

@@ -22,12 +22,14 @@ Hugo 기반의 모던한 포트폴리오 웹사이트 템플릿입니다.
 ### 설치
 
 1. **리포지토리 클론**
+
    ```bash
    git clone https://github.com/yourusername/portfolio-template.git
    cd portfolio-template
    ```
 
 2. **설정 스크립트 실행**
+
    ```bash
    chmod +x setup.sh
    ./setup.sh
@@ -38,6 +40,7 @@ Hugo 기반의 모던한 포트폴리오 웹사이트 템플릿입니다.
    - 이름, 기술 스택, 프로젝트, 자격증 등
 
 4. **로컬 서버 실행**
+
    ```bash
    hugo server
    ```
@@ -72,6 +75,7 @@ portfolio-template/
 ## 🎨 커스터마이징
 
 ### 데이터 수정
+
 `data/portfolio.yaml`에서 다음을 수정:
 
 ```yaml
@@ -94,9 +98,11 @@ certifications:
 ```
 
 ### 섹션 추가/수정
+
 `layouts/partials/portfolio/` 폴더의 HTML 파일들을 수정
 
 ### 스타일 변경
+
 `assets/css/portfolio.scss` 파일 수정
 
 ## 🔐 비공개 콘텐츠
@@ -104,11 +110,13 @@ certifications:
 포트폴리오의 상세 정보는 암호화되어 보호됩니다.
 
 ### 암호화 방법
+
 1. `encrypt.js` 스크립트로 콘텐츠 암호화
 2. 암호화된 데이터가 `layouts/_default/portfolio.html`에 삽입
 3. 방문자가 비밀번호 입력 시 복호화
 
 ### 암호화 실행
+
 ```bash
 node encrypt.js
 ```
@@ -116,11 +124,13 @@ node encrypt.js
 ## 📦 빌드 및 배포
 
 ### 프로덕션 빌드
+
 ```bash
 hugo --minify
 ```
 
 ### GitHub Pages 배포
+
 ```bash
 # 1. 빌드
 hugo --minify
@@ -132,11 +142,13 @@ hugo --minify
 ## 🛠️ 개발
 
 ### 로컬 서버
+
 ```bash
 hugo server -D
 ```
 
 ### 새 콘텐츠 추가
+
 ```bash
 hugo new posts/my-post.md
 ```
