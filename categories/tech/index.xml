@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tech on My Dev Blog</title>
+    <title>Tech on Lee WooJin | Developer</title>
     <link>https://zmfpdl64.github.io/categories/tech/</link>
-    <description>Recent content in Tech on My Dev Blog</description>
-    <generator>Hugo</generator>
+    <description>Recent content in Tech on Lee WooJin | Developer</description>
+    <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 12:00:00 +0900</lastBuildDate>
     <atom:link href="https://zmfpdl64.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>첫 글 - Hugo 블로그 시작하기</title>
       <link>https://zmfpdl64.github.io/posts/first-post/</link>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 +0900</pubDate>
+      <pubDate>Mon, 02 Feb 2026 12:00:00 +0900</pubDate>
       <guid>https://zmfpdl64.github.io/posts/first-post/</guid>
-      <description>&lt;p&gt;PaperMod 테마로 만든 첫 Hugo 블로그 글입니다!&lt;/p&gt;&#xA;&lt;p&gt;앞으로 다양한 글을 작성할 예정이니 많은 관심 부탁드립니다!&lt;/p&gt;</description>
+      <description>Hugo &#43; PaperMod 테마로 블로그를 시작했습니다!</description>
+    </item>
+    <item>
+      <title>Github Desktop으로 PR 전송하기까지 절차</title>
+      <link>https://zmfpdl64.github.io/posts/github-desktop-pr-guide/</link>
+      <pubDate>Sun, 29 Oct 2023 21:32:56 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/github-desktop-pr-guide/</guid>
+      <description>Github Desktop을 사용하여 Fork부터 PR까지 전체 워크플로우</description>
+    </item>
+    <item>
+      <title>프레임워크와 라이브러리의 차이</title>
+      <link>https://zmfpdl64.github.io/posts/framework-library-difference/</link>
+      <pubDate>Wed, 19 Jul 2023 15:20:48 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/framework-library-difference/</guid>
+      <description>프레임워크와 라이브러리의 개념과 차이점을 코드 예제와 함께 이해하기</description>
     </item>
   </channel>
 </rss>

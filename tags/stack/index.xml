@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Stack on Lee WooJin | Developer</title>
+    <link>https://zmfpdl64.github.io/tags/stack/</link>
+    <description>Recent content in Stack on Lee WooJin | Developer</description>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Thu, 29 Jun 2023 14:09:43 +0900</lastBuildDate>
+    <atom:link href="https://zmfpdl64.github.io/tags/stack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>프로그래머스 택배상자 - Stack 활용 문제 풀이</title>
+      <link>https://zmfpdl64.github.io/posts/programmers-parcel-box/</link>
+      <pubDate>Thu, 29 Jun 2023 14:09:43 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/programmers-parcel-box/</guid>
+      <description>프로그래머스 택배상자 문제를 스택 자료구조로 해결하는 방법</description>
+    </item>
+  </channel>
+</rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hugo on My Dev Blog</title>
+    <title>Hugo on Lee WooJin | Developer</title>
     <link>https://zmfpdl64.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on My Dev Blog</description>
-    <generator>Hugo</generator>
+    <description>Recent content in Hugo on Lee WooJin | Developer</description>
+    <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 12:00:00 +0900</lastBuildDate>
     <atom:link href="https://zmfpdl64.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>첫 글 - Hugo 블로그 시작하기</title>
       <link>https://zmfpdl64.github.io/posts/first-post/</link>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 +0900</pubDate>
+      <pubDate>Mon, 02 Feb 2026 12:00:00 +0900</pubDate>
       <guid>https://zmfpdl64.github.io/posts/first-post/</guid>
-      <description>&lt;p&gt;PaperMod 테마로 만든 첫 Hugo 블로그 글입니다!&lt;/p&gt;&#xA;&lt;p&gt;앞으로 다양한 글을 작성할 예정이니 많은 관심 부탁드립니다!&lt;/p&gt;</description>
+      <description>Hugo &#43; PaperMod 테마로 블로그를 시작했습니다!</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>설계 on Lee WooJin | Developer</title>
+    <link>https://zmfpdl64.github.io/tags/%EC%84%A4%EA%B3%84/</link>
+    <description>Recent content in 설계 on Lee WooJin | Developer</description>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 29 Oct 2023 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://zmfpdl64.github.io/tags/%EC%84%A4%EA%B3%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>주문내역을 내려줄 때 가격 멱등성에 대한 고민</title>
+      <link>https://zmfpdl64.github.io/posts/order-price-idempotency/</link>
+      <pubDate>Sun, 29 Oct 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/order-price-idempotency/</guid>
+      <description>메뉴 가격 변경 시 주문 내역의 가격 일관성 유지 방법</description>
+    </item>
+  </channel>
+</rss>

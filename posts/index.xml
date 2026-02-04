@@ -1,19 +1,243 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on My Dev Blog</title>
+    <title>Posts on Lee WooJin | Developer</title>
     <link>https://zmfpdl64.github.io/posts/</link>
-    <description>Recent content in Posts on My Dev Blog</description>
-    <generator>Hugo</generator>
+    <description>Recent content in Posts on Lee WooJin | Developer</description>
+    <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 12:00:00 +0900</lastBuildDate>
     <atom:link href="https://zmfpdl64.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>첫 글 - Hugo 블로그 시작하기</title>
       <link>https://zmfpdl64.github.io/posts/first-post/</link>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 +0900</pubDate>
+      <pubDate>Mon, 02 Feb 2026 12:00:00 +0900</pubDate>
       <guid>https://zmfpdl64.github.io/posts/first-post/</guid>
-      <description>&lt;p&gt;PaperMod 테마로 만든 첫 Hugo 블로그 글입니다!&lt;/p&gt;&#xA;&lt;p&gt;앞으로 다양한 글을 작성할 예정이니 많은 관심 부탁드립니다!&lt;/p&gt;</description>
+      <description>Hugo &#43; PaperMod 테마로 블로그를 시작했습니다!</description>
+    </item>
+    <item>
+      <title>[SpringBoot] ThreadLocal을 활용한 인증관리</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-threadlocal-authentication/</link>
+      <pubDate>Thu, 20 Jun 2024 19:26:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-threadlocal-authentication/</guid>
+      <description>Spring Boot에서 ThreadLocal을 사용한 인증 관리와 주의사항</description>
+    </item>
+    <item>
+      <title>[SpringBoot] In-Memory 환경 Memory Leak</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-memory-leak-inmemory/</link>
+      <pubDate>Thu, 20 Jun 2024 19:20:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-memory-leak-inmemory/</guid>
+      <description>In-Memory 인증번호 관리 시 발생하는 메모리 누수 문제와 해결 방법</description>
+    </item>
+    <item>
+      <title>BeanPay Detail 삭제 이유</title>
+      <link>https://zmfpdl64.github.io/posts/beanpay-detail-removal/</link>
+      <pubDate>Mon, 03 Jun 2024 01:16:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/beanpay-detail-removal/</guid>
+      <description>BeanPayDetail 테이블 제거 및 PaymentDetail로 통합한 이유</description>
+    </item>
+    <item>
+      <title>락 선택 이유와 성능 테스트</title>
+      <link>https://zmfpdl64.github.io/posts/lock-selection-performance-test/</link>
+      <pubDate>Tue, 30 Apr 2024 18:23:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/lock-selection-performance-test/</guid>
+      <description>트랜잭션, Beta Lock, Redisson 분산락의 성능 비교 테스트</description>
+    </item>
+    <item>
+      <title>Reflection 메소드 매개변수 필드명이 arg0, arg1로 나오는 문제 해결</title>
+      <link>https://zmfpdl64.github.io/posts/java-reflection-parameter-names/</link>
+      <pubDate>Sun, 28 Apr 2024 00:33:43 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/java-reflection-parameter-names/</guid>
+      <description>Java Reflection에서 메소드 매개변수 이름이 arg0, arg1로 나오는 원인과 해결 방법</description>
+    </item>
+    <item>
+      <title>Github Actions와 AWS CodeDeploy를 활용한 CI/CD 구축</title>
+      <link>https://zmfpdl64.github.io/posts/cicd-github-actions-aws/</link>
+      <pubDate>Fri, 19 Apr 2024 16:45:28 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/cicd-github-actions-aws/</guid>
+      <description>Github Actions와 AWS S3, CodeDeploy를 사용하여 Spring Boot 애플리케이션 CI/CD 파이프라인 구축하기</description>
+    </item>
+    <item>
+      <title>코리아노 BeanPay 고민</title>
+      <link>https://zmfpdl64.github.io/posts/koreano-beanpay-design/</link>
+      <pubDate>Wed, 17 Apr 2024 23:41:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/koreano-beanpay-design/</guid>
+      <description>MSA 환경에서 빈페이 결제 시스템 설계 고민과 분산락 선택 이유</description>
+    </item>
+    <item>
+      <title>TreeSet의 구조와 Comparator 주의사항</title>
+      <link>https://zmfpdl64.github.io/posts/java-treeset-comparator/</link>
+      <pubDate>Thu, 29 Feb 2024 21:01:26 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/java-treeset-comparator/</guid>
+      <description>TreeSet과 HashSet의 동등성 비교 방식 차이와 주의사항</description>
+    </item>
+    <item>
+      <title>해시(Hash) 자료구조와 충돌 회피 기법</title>
+      <link>https://zmfpdl64.github.io/posts/data-structure-hash/</link>
+      <pubDate>Mon, 05 Feb 2024 18:42:14 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/data-structure-hash/</guid>
+      <description>해시 자료구조의 원리, 충돌 회피 방법(Chaining, Open Addressing), 해시 함수 구현</description>
+    </item>
+    <item>
+      <title>이펙티브 자바 - 다 쓴 객체 참조를 해제하라</title>
+      <link>https://zmfpdl64.github.io/posts/java-release-object-references/</link>
+      <pubDate>Wed, 20 Dec 2023 21:48:45 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/java-release-object-references/</guid>
+      <description>다 쓴 객체 참조로 인한 메모리 누수 방지 방법</description>
+    </item>
+    <item>
+      <title>[SpringBoot] Spring Batch 이용권 만료</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-batch-pass-expiration/</link>
+      <pubDate>Sun, 17 Dec 2023 19:56:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-batch-pass-expiration/</guid>
+      <description>Spring Batch를 활용한 이용권 만료 처리 구현</description>
+    </item>
+    <item>
+      <title>[SpringBoot] 스프링 배치란?</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-batch-introduction/</link>
+      <pubDate>Sat, 16 Dec 2023 16:38:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-batch-introduction/</guid>
+      <description>Spring Batch의 개념과 주요 용어, 장점 정리</description>
+    </item>
+    <item>
+      <title>Java 동적 프록시 (Dynamic Proxy) 이해하기</title>
+      <link>https://zmfpdl64.github.io/posts/java-dynamic-proxy/</link>
+      <pubDate>Tue, 28 Nov 2023 15:38:26 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/java-dynamic-proxy/</guid>
+      <description>Java에서 동적 프록시를 사용하는 방법과 한계점</description>
+    </item>
+    <item>
+      <title>Java GC (Garbage Collection) 이해하기</title>
+      <link>https://zmfpdl64.github.io/posts/java-gc-garbage-collection/</link>
+      <pubDate>Thu, 09 Nov 2023 13:32:17 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/java-gc-garbage-collection/</guid>
+      <description>Java GC의 동작 원리와 다양한 GC 방식 소개</description>
+    </item>
+    <item>
+      <title>HTTP/1.0, HTTP/1.1, HTTP/2의 특징과 차이점</title>
+      <link>https://zmfpdl64.github.io/posts/network-http-versions/</link>
+      <pubDate>Fri, 03 Nov 2023 22:48:10 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/network-http-versions/</guid>
+      <description>HTTP 버전별 특징과 발전 과정, RTT 문제 해결 방법 정리</description>
+    </item>
+    <item>
+      <title>IP 프로토콜의 이해 - IPv4, 클래스, DHCP, NAT</title>
+      <link>https://zmfpdl64.github.io/posts/network-ip-protocol/</link>
+      <pubDate>Thu, 02 Nov 2023 21:51:41 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/network-ip-protocol/</guid>
+      <description>IP 프로토콜의 기본 개념과 주소 체계, DHCP, NAT 설명</description>
+    </item>
+    <item>
+      <title>Github Desktop으로 PR 전송하기까지 절차</title>
+      <link>https://zmfpdl64.github.io/posts/github-desktop-pr-guide/</link>
+      <pubDate>Sun, 29 Oct 2023 21:32:56 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/github-desktop-pr-guide/</guid>
+      <description>Github Desktop을 사용하여 Fork부터 PR까지 전체 워크플로우</description>
+    </item>
+    <item>
+      <title>주문내역을 내려줄 때 가격 멱등성에 대한 고민</title>
+      <link>https://zmfpdl64.github.io/posts/order-price-idempotency/</link>
+      <pubDate>Sun, 29 Oct 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/order-price-idempotency/</guid>
+      <description>메뉴 가격 변경 시 주문 내역의 가격 일관성 유지 방법</description>
+    </item>
+    <item>
+      <title>백준 1430번: 공격 - BFS로 네트워크 에너지 전달 문제 풀이</title>
+      <link>https://zmfpdl64.github.io/posts/boj-1430-attack/</link>
+      <pubDate>Sat, 16 Sep 2023 20:38:12 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/boj-1430-attack/</guid>
+      <description>백준 1430번 공격 문제를 BFS와 heapq를 활용하여 해결하는 방법</description>
+    </item>
+    <item>
+      <title>프레임워크와 라이브러리의 차이</title>
+      <link>https://zmfpdl64.github.io/posts/framework-library-difference/</link>
+      <pubDate>Wed, 19 Jul 2023 15:20:48 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/framework-library-difference/</guid>
+      <description>프레임워크와 라이브러리의 개념과 차이점을 코드 예제와 함께 이해하기</description>
+    </item>
+    <item>
+      <title>정적 팩토리 메소드의 장단점</title>
+      <link>https://zmfpdl64.github.io/posts/java-static-factory-method/</link>
+      <pubDate>Fri, 07 Jul 2023 00:15:20 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/java-static-factory-method/</guid>
+      <description>이펙티브 자바 - 정적 팩토리 메소드의 장점과 활용 방법</description>
+    </item>
+    <item>
+      <title>[인증/인가] JWT토큰 생성 과정과 원리에 대해서</title>
+      <link>https://zmfpdl64.github.io/posts/jwt-token-guide/</link>
+      <pubDate>Wed, 05 Jul 2023 14:26:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/jwt-token-guide/</guid>
+      <description>JWT 토큰의 생성 과정과 HS256 암호화 원리 설명</description>
+    </item>
+    <item>
+      <title>프로그래머스 택배상자 - Stack 활용 문제 풀이</title>
+      <link>https://zmfpdl64.github.io/posts/programmers-parcel-box/</link>
+      <pubDate>Thu, 29 Jun 2023 14:09:43 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/programmers-parcel-box/</guid>
+      <description>프로그래머스 택배상자 문제를 스택 자료구조로 해결하는 방법</description>
+    </item>
+    <item>
+      <title>프로그래머스 프렌즈 4블록 - 2x2 블록 제거 시뮬레이션</title>
+      <link>https://zmfpdl64.github.io/posts/programmers-friends-4-block/</link>
+      <pubDate>Mon, 15 May 2023 14:34:08 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/programmers-friends-4-block/</guid>
+      <description>프로그래머스 프렌즈 4블록 문제를 2D 배열 시뮬레이션으로 해결하는 방법</description>
+    </item>
+    <item>
+      <title>프로그래머스 길 찾기 게임 - 이진 트리 자료구조로 풀기</title>
+      <link>https://zmfpdl64.github.io/posts/programmers-find-path-game/</link>
+      <pubDate>Sat, 13 May 2023 17:56:49 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/programmers-find-path-game/</guid>
+      <description>프로그래머스 길 찾기 게임 문제를 이진 트리 자료구조로 구현하여 전위/후위 순회로 해결하는 방법</description>
+    </item>
+    <item>
+      <title>이진트리의 전위, 중위, 후위 순회 알아보기</title>
+      <link>https://zmfpdl64.github.io/posts/algorithm-binary-tree-traversal/</link>
+      <pubDate>Thu, 11 May 2023 19:28:14 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/algorithm-binary-tree-traversal/</guid>
+      <description>이진트리의 세 가지 순회 방법(전위, 중위, 후위)의 원리와 구현</description>
+    </item>
+    <item>
+      <title>프로그래머스 양궁대회 - 완전 탐색으로 최적의 화살 배치 찾기</title>
+      <link>https://zmfpdl64.github.io/posts/programmers-archery-competition/</link>
+      <pubDate>Wed, 10 May 2023 14:28:51 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/programmers-archery-competition/</guid>
+      <description>프로그래머스 양궁대회 문제를 itertools.product를 활용한 완전 탐색으로 해결하는 방법</description>
+    </item>
+    <item>
+      <title>프로그래머스 후보키 - 조합과 부분집합으로 해결하기</title>
+      <link>https://zmfpdl64.github.io/posts/programmers-candidate-key/</link>
+      <pubDate>Sun, 07 May 2023 18:22:03 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/programmers-candidate-key/</guid>
+      <description>프로그래머스 후보키 문제를 유일성과 최소성 조건으로 해결하는 방법</description>
+    </item>
+    <item>
+      <title>@WithMockUser 테스트 시 getPrincipal Null 해결</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-withmockuser-null/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-withmockuser-null/</guid>
+      <description>Spring Security @WithMockUser 사용 시 getPrincipal()이 null을 반환하는 문제 해결 방법</description>
+    </item>
+    <item>
+      <title>Spring Boot Redis 캐싱 서버 적용하기</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-redis-caching/</link>
+      <pubDate>Mon, 01 May 2023 13:11:15 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-redis-caching/</guid>
+      <description>Spring Boot 프로젝트에 Redis 캐싱 서버를 적용하는 방법</description>
+    </item>
+    <item>
+      <title>Transaction 커밋과 flush 타이밍 이해하기</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-transaction-commit/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-transaction-commit/</guid>
+      <description>JPA에서 save()와 saveAndFlush()의 차이점과 트랜잭션 커밋 시점 이해</description>
+    </item>
+    <item>
+      <title>스프링부트 터미널 build 실행 오류 (JDK 17)</title>
+      <link>https://zmfpdl64.github.io/posts/springboot-terminal-build-error/</link>
+      <pubDate>Tue, 04 Apr 2023 19:06:45 +0900</pubDate>
+      <guid>https://zmfpdl64.github.io/posts/springboot-terminal-build-error/</guid>
+      <description>터미널에서 gradlew build 실행 시 JDK 17 버전 호환 문제 해결 방법</description>
     </item>
   </channel>
 </rss>
