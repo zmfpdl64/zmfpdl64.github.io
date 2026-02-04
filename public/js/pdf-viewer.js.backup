@@ -239,7 +239,7 @@ function resetZoom() {
 window.pdfViewer = {
   zoomIn: zoomIn,
   zoomOut: zoomOut,
-  resetZoom: resetZoom,
+  resetZoom: resetZoom
 };
 
 // 초기화

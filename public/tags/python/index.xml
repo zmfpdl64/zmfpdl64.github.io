@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on Lee WooJin | Developer</title>
-    <link>http://localhost:1313/tags/python/</link>
+    <link>https://zmfpdl64.github.io/tags/python/</link>
     <description>Recent content in Python on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sat, 16 Sep 2023 20:38:12 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>백준 1430번: 공격 - BFS로 네트워크 에너지 전달 문제 풀이</title>
-      <link>http://localhost:1313/posts/boj-1430-attack/</link>
+      <link>https://zmfpdl64.github.io/posts/boj-1430-attack/</link>
       <pubDate>Sat, 16 Sep 2023 20:38:12 +0900</pubDate>
-      <guid>http://localhost:1313/posts/boj-1430-attack/</guid>
+      <guid>https://zmfpdl64.github.io/posts/boj-1430-attack/</guid>
       <description>백준 1430번 공격 문제를 BFS와 heapq를 활용하여 해결하는 방법</description>
     </item>
     <item>
       <title>프로그래머스 택배상자 - Stack 활용 문제 풀이</title>
-      <link>http://localhost:1313/posts/programmers-parcel-box/</link>
+      <link>https://zmfpdl64.github.io/posts/programmers-parcel-box/</link>
       <pubDate>Thu, 29 Jun 2023 14:09:43 +0900</pubDate>
-      <guid>http://localhost:1313/posts/programmers-parcel-box/</guid>
+      <guid>https://zmfpdl64.github.io/posts/programmers-parcel-box/</guid>
       <description>프로그래머스 택배상자 문제를 스택 자료구조로 해결하는 방법</description>
     </item>
     <item>
       <title>프로그래머스 프렌즈 4블록 - 2x2 블록 제거 시뮬레이션</title>
-      <link>http://localhost:1313/posts/programmers-friends-4-block/</link>
+      <link>https://zmfpdl64.github.io/posts/programmers-friends-4-block/</link>
       <pubDate>Mon, 15 May 2023 14:34:08 +0900</pubDate>
-      <guid>http://localhost:1313/posts/programmers-friends-4-block/</guid>
+      <guid>https://zmfpdl64.github.io/posts/programmers-friends-4-block/</guid>
       <description>프로그래머스 프렌즈 4블록 문제를 2D 배열 시뮬레이션으로 해결하는 방법</description>
     </item>
     <item>
       <title>프로그래머스 길 찾기 게임 - 이진 트리 자료구조로 풀기</title>
-      <link>http://localhost:1313/posts/programmers-find-path-game/</link>
+      <link>https://zmfpdl64.github.io/posts/programmers-find-path-game/</link>
       <pubDate>Sat, 13 May 2023 17:56:49 +0900</pubDate>
-      <guid>http://localhost:1313/posts/programmers-find-path-game/</guid>
+      <guid>https://zmfpdl64.github.io/posts/programmers-find-path-game/</guid>
       <description>프로그래머스 길 찾기 게임 문제를 이진 트리 자료구조로 구현하여 전위/후위 순회로 해결하는 방법</description>
     </item>
     <item>
       <title>이진트리의 전위, 중위, 후위 순회 알아보기</title>
-      <link>http://localhost:1313/posts/algorithm-binary-tree-traversal/</link>
+      <link>https://zmfpdl64.github.io/posts/algorithm-binary-tree-traversal/</link>
       <pubDate>Thu, 11 May 2023 19:28:14 +0900</pubDate>
-      <guid>http://localhost:1313/posts/algorithm-binary-tree-traversal/</guid>
+      <guid>https://zmfpdl64.github.io/posts/algorithm-binary-tree-traversal/</guid>
       <description>이진트리의 세 가지 순회 방법(전위, 중위, 후위)의 원리와 구현</description>
     </item>
     <item>
       <title>프로그래머스 양궁대회 - 완전 탐색으로 최적의 화살 배치 찾기</title>
-      <link>http://localhost:1313/posts/programmers-archery-competition/</link>
+      <link>https://zmfpdl64.github.io/posts/programmers-archery-competition/</link>
       <pubDate>Wed, 10 May 2023 14:28:51 +0900</pubDate>
-      <guid>http://localhost:1313/posts/programmers-archery-competition/</guid>
+      <guid>https://zmfpdl64.github.io/posts/programmers-archery-competition/</guid>
       <description>프로그래머스 양궁대회 문제를 itertools.product를 활용한 완전 탐색으로 해결하는 방법</description>
     </item>
     <item>
       <title>프로그래머스 후보키 - 조합과 부분집합으로 해결하기</title>
-      <link>http://localhost:1313/posts/programmers-candidate-key/</link>
+      <link>https://zmfpdl64.github.io/posts/programmers-candidate-key/</link>
       <pubDate>Sun, 07 May 2023 18:22:03 +0900</pubDate>
-      <guid>http://localhost:1313/posts/programmers-candidate-key/</guid>
+      <guid>https://zmfpdl64.github.io/posts/programmers-candidate-key/</guid>
       <description>프로그래머스 후보키 문제를 유일성과 최소성 조건으로 해결하는 방법</description>
     </item>
   </channel>

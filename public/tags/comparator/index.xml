@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Comparator on Lee WooJin | Developer</title>
-    <link>http://localhost:1313/tags/comparator/</link>
+    <link>https://zmfpdl64.github.io/tags/comparator/</link>
     <description>Recent content in Comparator on Lee WooJin | Developer</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 29 Feb 2024 21:01:26 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/comparator/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zmfpdl64.github.io/tags/comparator/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TreeSet의 구조와 Comparator 주의사항</title>
-      <link>http://localhost:1313/posts/java-treeset-comparator/</link>
+      <link>https://zmfpdl64.github.io/posts/java-treeset-comparator/</link>
       <pubDate>Thu, 29 Feb 2024 21:01:26 +0900</pubDate>
-      <guid>http://localhost:1313/posts/java-treeset-comparator/</guid>
+      <guid>https://zmfpdl64.github.io/posts/java-treeset-comparator/</guid>
       <description>TreeSet과 HashSet의 동등성 비교 방식 차이와 주의사항</description>
     </item>
   </channel>
