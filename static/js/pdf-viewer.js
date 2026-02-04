@@ -4,6 +4,7 @@ let pageNum = 1;
 let pageRendering = false;
 let pageNumPending = null;
 let canvas, ctx;
+let currentScale = 1; // 현재 확대/축소 비율
 
 // PDF.js 워커 설정
 pdfjsLib.GlobalWorkerOptions.workerSrc =
@@ -39,12 +40,14 @@ function openPdfViewer(pdfUrl, title) {
 async function loadPdf(url) {
   try {
     // 로딩 표시
+    showLoader();
     document.getElementById("page-info").textContent = "로딩 중...";
     console.log("PDF 로드 시작:", url);
 
     const loadingTask = pdfjsLib.getDocument(url);
     pdfDoc = await loadingTask.promise;
     pageNum = 1;
+    currentScale = 1; // 초기 스케일 리셋
     console.log("PDF 로드 완료, 총 페이지:", pdfDoc.numPages);
 
     // 페이지 정보 업데이트
@@ -57,6 +60,7 @@ async function loadPdf(url) {
     console.error("오류 상세:", error.message);
     document.getElementById("page-info").textContent =
       "PDF 로드 실패: " + error.message;
+    hideLoader();
   }
 }
 
@@ -76,31 +80,26 @@ function renderPage(num) {
       const originalViewport = page.getViewport({ scale: 1 });
       const scaleWidth = containerWidth / originalViewport.width;
       const scaleHeight = containerHeight / originalViewport.height;
-      const scale = Math.min(scaleWidth, scaleHeight, 2); // 최대 2배
+      const baseScale = Math.min(scaleWidth, scaleHeight, 2); // 최대 2배
+      const scale = baseScale * currentScale; // 사용자 확대/축소 적용
 
-      // 고해상도 디스플레이 지원 (모바일 화질 개선)
-      // 최소 3배 해상도로 렌더링하여 선명도 향상
-      const pixelRatio = Math.max(window.devicePixelRatio || 1, 3);
-      const viewport = page.getViewport({ scale: scale * pixelRatio });
-      console.log(
-        "Viewport 크기:",
-        viewport.width,
-        viewport.height,
-        "pixelRatio:",
-        pixelRatio,
-      );
+      const dpr = window.devicePixelRatio || 1;
+      const pixelRatio = Math.min(dpr, 2.5); // 최대 2.5배로 제한
+      const viewport = page.getViewport({ scale }); // viewport는 기본 스케일만
 
-      // 실제 캔버스 크기는 pixelRatio 배
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
+      canvas.width = viewport.width * pixelRatio;
+      canvas.height = viewport.height * pixelRatio;
+      canvas.style.width = viewport.width + "px";
+      canvas.style.height = viewport.height + "px";
 
-      // CSS 크기는 원래 크기로 유지 (표시 크기)
-      canvas.style.width = viewport.width / pixelRatio + "px";
-      canvas.style.height = viewport.height / pixelRatio + "px";
+      ctx.setTransform(1, 0, 0, 1, 0, 0); // 변환 초기화
+      ctx.scale(pixelRatio, pixelRatio); // Canvas 컨텍스트에서 스케일 적용
 
       const renderContext = {
         canvasContext: ctx,
         viewport: viewport,
+        enableWebGL: true,
+        intent: "display",
       };
 
       const renderTask = page.render(renderContext);
@@ -110,6 +109,7 @@ function renderPage(num) {
           pageRendering = false;
           console.log("페이지 렌더링 완료:", num);
           updatePageInfo();
+          hideLoader();
 
           if (pageNumPending !== null) {
             renderPage(pageNumPending);
@@ -119,11 +119,13 @@ function renderPage(num) {
         .catch(function (error) {
           console.error("렌더링 오류:", error);
           document.getElementById("page-info").textContent = "렌더링 실패";
+          hideLoader();
         });
     })
     .catch(function (error) {
       console.error("페이지 로드 오류:", error);
       document.getElementById("page-info").textContent = "페이지 로드 실패";
+      hideLoader();
     });
 }
 
@@ -169,6 +171,7 @@ function closePdfViewer() {
   document.body.style.overflow = ""; // 스크롤 복원
   pdfDoc = null;
   pageNum = 1;
+  currentScale = 1; // 스케일 리셋
 
   // 캔버스 클리어
   if (ctx) {
@@ -200,6 +203,44 @@ function handleKeyDown(event) {
       break;
   }
 }
+
+// 로딩 표시 함수
+function showLoader() {
+  const loader = document.getElementById("pdf-loader");
+  if (loader) {
+    loader.style.display = "block";
+  }
+}
+
+function hideLoader() {
+  const loader = document.getElementById("pdf-loader");
+  if (loader) {
+    loader.style.display = "none";
+  }
+}
+
+// 확대/축소 함수들
+function zoomIn() {
+  currentScale = Math.min(currentScale * 1.2, 3); // 최대 3배
+  renderPage(pageNum);
+}
+
+function zoomOut() {
+  currentScale = Math.max(currentScale / 1.2, 0.5); // 최소 0.5배
+  renderPage(pageNum);
+}
+
+function resetZoom() {
+  currentScale = 1;
+  renderPage(pageNum);
+}
+
+// PDF 뷰어 객체 (전역으로 노출)
+window.pdfViewer = {
+  zoomIn: zoomIn,
+  zoomOut: zoomOut,
+  resetZoom: resetZoom,
+};
 
 // 초기화
 document.addEventListener("DOMContentLoaded", function () {

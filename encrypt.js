@@ -376,6 +376,18 @@ const privateContent = `
         <button class="pdf-close" onclick="closePdfViewer()">&times;</button>
       </div>
       <div class="pdf-viewer-container">
+        <!-- 로딩 인디케이터 추가 -->
+        <div id="pdf-loader" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1001;">
+          <div class="spinner"></div>
+        </div>
+
+        <!-- 확대/축소 버튼 (선택사항) -->
+        <div class="pdf-zoom-controls">
+          <button onclick="pdfViewer.zoomOut()">-</button>
+          <button onclick="pdfViewer.resetZoom()">100%</button>
+          <button onclick="pdfViewer.zoomIn()">+</button>
+        </div>
+
         <button class="pdf-nav pdf-prev" onclick="prevPage()" title="이전 페이지 (←)">&#10094;</button>
         <canvas id="pdf-canvas"></canvas>
         <button class="pdf-nav pdf-next" onclick="nextPage()" title="다음 페이지 (→)">&#10095;</button>
