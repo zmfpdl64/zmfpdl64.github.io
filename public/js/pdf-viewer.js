@@ -74,11 +74,18 @@ function renderPage(num) {
     const scaleHeight = containerHeight / originalViewport.height;
     const scale = Math.min(scaleWidth, scaleHeight, 2); // 최대 2배
 
-    const viewport = page.getViewport({ scale: scale });
-    console.log('Viewport 크기:', viewport.width, viewport.height);
+    // 고해상도 디스플레이 지원 (모바일 화질 개선)
+    const pixelRatio = window.devicePixelRatio || 1;
+    const viewport = page.getViewport({ scale: scale * pixelRatio });
+    console.log('Viewport 크기:', viewport.width, viewport.height, 'pixelRatio:', pixelRatio);
 
+    // 실제 캔버스 크기는 pixelRatio 배
     canvas.height = viewport.height;
     canvas.width = viewport.width;
+
+    // CSS 크기는 원래 크기로 유지 (표시 크기)
+    canvas.style.width = (viewport.width / pixelRatio) + 'px';
+    canvas.style.height = (viewport.height / pixelRatio) + 'px';
 
     const renderContext = {
       canvasContext: ctx,
