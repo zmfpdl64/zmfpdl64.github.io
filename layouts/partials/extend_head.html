@@ -1,0 +1,16 @@
+{{- /* Analytics SDK - 프로덕션에서만 로드 */ -}}
+{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+<script src="/js/analytics.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.WA) {
+      window.WA.init({
+        endpoint: '{{ site.Params.analyticsEndpoint | default "https://your-api-server.com/events" }}',
+        debug: false,
+        batchSize: 10,
+        flushInterval: 30000
+      });
+    }
+  });
+</script>
+{{- end }}
