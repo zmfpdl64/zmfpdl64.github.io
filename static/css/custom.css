@@ -3927,23 +3927,35 @@ pre code {
 }
 
 .pdf-close {
-    width: 40px;
-    height: 40px;
+    width: 12px;
+    height: 12px;
     border: none;
-    background: var(--bg-gray-100);
+    background: #ff5f57;
     border-radius: 50%;
-    font-size: 1.5rem;
-    color: var(--text-500);
     cursor: pointer;
     transition: all .2s ease;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-close::before {
+    content: "×";
+    font-size: 8px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .pdf-close:hover {
-    background: #ef4444;
-    color: #fff
+    background: #ff3b30;
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .pdf-viewer-container {
