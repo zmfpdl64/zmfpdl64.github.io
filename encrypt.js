@@ -6,14 +6,14 @@ const privateContent = `
     <h2>📄 이력서 & 포트폴리오</h2>
     <p class="section-hint">클릭하여 문서 확인</p>
     <div class="document-grid">
-      <div class="document-card" onclick="openPdfViewer('/certificates/%EC%9D%B4%EB%A0%A5%EC%84%9C_20251218.pdf', '이력서')">
+      <div class="document-card" data-pdf-url="/certificates/%EC%9D%B4%EB%A0%A5%EC%84%9C_20251218.pdf" data-title="이력서">
         <span class="document-icon">📝</span>
         <div class="document-info">
           <h4>이력서</h4>
           <p>Resume / CV</p>
         </div>
       </div>
-      <div class="document-card" onclick="openPdfViewer('/certificates/%EC%9D%B4%EC%9A%B0%EC%A7%84_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4_2025_11%20(3).pdf', '포트폴리오')">
+      <div class="document-card" data-pdf-url="/certificates/%EC%9D%B4%EC%9A%B0%EC%A7%84_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4_2025_11%20(3).pdf" data-title="포트폴리오">
         <span class="document-icon">📂</span>
         <div class="document-info">
           <h4>포트폴리오</h4>
@@ -27,7 +27,6 @@ const privateContent = `
   <section
     class="portfolio-section private-content"
     id="project-details-section"
-    style="display: none"
   >
     <h2>📋 프로젝트 상세</h2>
     <div class="project-cards">
