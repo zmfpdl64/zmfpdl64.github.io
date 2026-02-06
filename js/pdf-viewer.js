@@ -53,7 +53,20 @@ async function loadPdf(url) {
     document.getElementById("page-info").textContent = "로딩 중...";
     console.log("PDF 로드 시작:", url);
 
-    const loadingTask = pdfjsLib.getDocument(url);
+    // localStorage에서 비밀번호 가져오기
+    const password = localStorage.getItem("pf-password");
+    console.log("PDF 비밀번호 확인:", password ? "있음" : "없음");
+
+    if (!password) {
+      document.getElementById("page-info").textContent = "입장 코드를 먼저 입력해주세요";
+      hideLoader();
+      return;
+    }
+
+    const loadingTask = pdfjsLib.getDocument({
+      url: url,
+      password: password
+    });
     pdfDoc = await loadingTask.promise;
     pageNum = 1;
     currentScale = 1; // 초기 스케일 리셋
